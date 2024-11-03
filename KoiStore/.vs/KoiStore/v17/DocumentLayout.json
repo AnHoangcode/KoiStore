@@ -35,15 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BusinessObjects",
+              "Title": "BusinessObjects.csproj",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj",
               "RelativeDocumentMoniker": "BusinessObjects\\BusinessObjects.csproj",
               "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj",
               "RelativeToolTip": "BusinessObjects\\BusinessObjects.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-03T15:03:38.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T15:03:38.205Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "RazorPages\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-03T14:54:02.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T14:54:02.031Z"
             },
             {
               "$type": "Document",
@@ -81,21 +79,19 @@
               "RelativeToolTip": "RazorPages\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:53:58.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T14:53:58.52Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "1.RazorPages",
+              "Title": "1.RazorPages.csproj",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\1.RazorPages.csproj",
               "RelativeDocumentMoniker": "RazorPages\\1.RazorPages.csproj",
               "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\1.RazorPages.csproj",
               "RelativeToolTip": "RazorPages\\1.RazorPages.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-03T14:53:52.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T14:53:52.587Z"
             }
           ]
         }
