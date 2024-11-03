@@ -1,0 +1,227 @@
+CREATE DATABASE KoiStoreDB
+
+USE KoiStoreDB
+GO
+
+CREATE TABLE Role (
+    Role_Id INT IDENTITY(1,1) PRIMARY KEY,
+    RoleName VARCHAR(50)
+);
+
+CREATE TABLE [User] (
+    User_Id INT IDENTITY(1,1) PRIMARY KEY,
+    Username VARCHAR(50),
+    Password VARCHAR(50),
+    Role_Id INT FOREIGN KEY REFERENCES Role(Role_Id),
+    Status VARCHAR(50)
+);
+
+CREATE TABLE UserProfile (
+    Profile_Id INT IDENTITY(1,1) PRIMARY KEY,
+    User_Id INT FOREIGN KEY REFERENCES [User](User_Id),
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(50),
+    PhoneNumber VARCHAR(10),
+    Address VARCHAR(50),
+    Gender VARCHAR(50),
+    DateOfBirth VARCHAR(50)
+);
+
+-- Create tables related to Koi and Orders
+CREATE TABLE KoiType (
+    Type_Id INT IDENTITY(1,1) PRIMARY KEY,
+    Type_Name VARCHAR(50),
+    Description VARCHAR(250),
+    Create_At DATETIME,
+    Update_At DATETIME,
+    Status VARCHAR(50)
+);
+
+CREATE TABLE KoiFarm (
+    Farm_Id INT IDENTITY(1,1) PRIMARY KEY,
+    Farm_Name VARCHAR(50),
+    Location VARCHAR(50),
+    Contact VARCHAR(50),
+    Description VARCHAR(250),
+    Status VARCHAR(50)
+);
+
+CREATE TABLE KoiProfile (
+    Koi_Id INT IDENTITY(1,1) PRIMARY KEY,
+    Type_Id INT FOREIGN KEY REFERENCES KoiType(Type_Id),
+    Farm_Id INT FOREIGN KEY REFERENCES KoiFarm(Farm_Id),
+    Koi_Name VARCHAR(50),
+    Quantity INT,
+    Size FLOAT,
+    Price FLOAT,
+    Description VARCHAR(250),
+    Image VARCHAR(250),
+    Create_At DATETIME,
+    Update_At DATETIME,
+    Rating_Average_Value FLOAT,
+    Status VARCHAR(50)
+);
+
+CREATE TABLE [Order] ( -- Avoid using reserved keywords as table names
+    Order_Id INT IDENTITY(1,1) PRIMARY KEY,
+    User_Id INT FOREIGN KEY REFERENCES [User](User_Id),
+    Create_At DATETIME,
+    Total FLOAT,
+    Delivery_Address VARCHAR(50),
+    Status VARCHAR(50)
+);
+
+CREATE TABLE OrderDetail (
+    Order_Detail_Id INT IDENTITY(1,1) PRIMARY KEY,
+    Order_Id INT FOREIGN KEY REFERENCES [Order](Order_Id),
+    User_Id INT FOREIGN KEY REFERENCES [User](User_Id),
+    Koi_Id INT FOREIGN KEY REFERENCES KoiProfile(Koi_Id),
+    Quantity INT,
+    Order_Detail_Type VARCHAR(50),
+    Total FLOAT,
+    Create_At DATETIME,
+    Update_At DATETIME,
+    Start_At DATETIME,
+    End_At DATETIME,
+    Status VARCHAR(50)
+);
+
+CREATE TABLE Feedback (
+    Feedback_Id INT IDENTITY(1,1) PRIMARY KEY,
+    User_Id INT FOREIGN KEY REFERENCES [User](User_Id),
+    Order_Detail_Id INT FOREIGN KEY REFERENCES OrderDetail(Order_Detail_Id),
+    Description VARCHAR(250),
+    Create_At DATETIME,
+    Status VARCHAR(50)
+);
+
+CREATE TABLE Rating (
+    Rating_Id INT IDENTITY(1,1) PRIMARY KEY,
+    User_Id INT FOREIGN KEY REFERENCES [User](User_Id),
+    Order_Detail_Id INT FOREIGN KEY REFERENCES OrderDetail(Order_Detail_Id),
+    Rating_Value FLOAT,
+    Description VARCHAR(250),
+    Create_At DATETIME,
+    Status VARCHAR(50)
+);
+
+-- Insert sample data into Role table
+INSERT INTO Role (RoleName) VALUES ('Admin'), ('Customer'), ('Staff');
+
+-- Insert sample data into User table
+INSERT INTO [User] (Username, Password, Role_Id, Status) VALUES
+('admin_user', 'password123', 1, 'Active'),
+('customer1', 'password123', 2, 'Active'),
+('customer2', 'password123', 2, 'Inactive'),
+('customer3', 'password123', 2, 'Active'),
+('staff1', 'password123', 3, 'Active'),
+('staff2', 'password123', 3, 'Active'),
+('customer4', 'password123', 2, 'Active'),
+('staff3', 'password123', 3, 'Inactive'),
+('customer5', 'password123', 2, 'Active'),
+('admin2', 'password123', 1, 'Inactive');
+
+-- Insert sample data into UserProfile table
+INSERT INTO UserProfile (User_Id, FirstName, LastName, Email, PhoneNumber, Address, Gender, DateOfBirth) VALUES
+(1, 'Alice', 'Admin', 'alice_admin@example.com', '5551234567', '123 Admin St', 'Female', '1985-05-15'),
+(2, 'John', 'Doe', 'johndoe1@example.com', '5552345678', '234 Customer Rd', 'Male', '1990-07-22'),
+(3, 'Jane', 'Smith', 'janesmith2@example.com', '5553456789', '345 Maple Ave', 'Female', '1988-03-12'),
+(4, 'Tom', 'Hanks', 'tomhanks3@example.com', '5554567890', '456 Pine St', 'Male', '1975-10-10'),
+(5, 'Emily', 'Brown', 'emilybrown@example.com', '5555678901', '567 Oak Dr', 'Female', '1993-08-05'),
+(6, 'David', 'Jones', 'davidjones@example.com', '5556789012', '678 Birch Blvd', 'Male', '1981-11-30'),
+(7, 'Sarah', 'White', 'sarahwhite@example.com', '5557890123', '789 Cedar Pl', 'Female', '1995-02-25'),
+(8, 'Chris', 'Green', 'chrisgreen@example.com', '5558901234', '890 Redwood Ln', 'Male', '1979-06-18'),
+(9, 'Emma', 'Lee', 'emmalee@example.com', '5559012345', '901 Aspen Way', 'Female', '1992-04-14'),
+(10, 'Luke', 'Sky', 'lukesky@example.com', '5550123456', '012 Elm Rd', 'Male', '1987-09-03');
+
+-- Insert sample data into KoiType table
+INSERT INTO KoiType (Type_Name, Description, Create_At, Update_At, Status) VALUES
+('Kohaku', 'White and red patterns', GETDATE(), GETDATE(), 'Available'),
+('Sanke', 'White with red and black spots', GETDATE(), GETDATE(), 'Available'),
+('Showa', 'Black with white and red patterns', GETDATE(), GETDATE(), 'Unavailable'),
+('Tancho', 'White with a red spot on the head', GETDATE(), GETDATE(), 'Available'),
+('Shusui', 'Blue with red underbelly', GETDATE(), GETDATE(), 'Available'),
+('Asagi', 'Blue and red scales', GETDATE(), GETDATE(), 'Unavailable'),
+('Bekko', 'Black with a white body', GETDATE(), GETDATE(), 'Available'),
+('Ginrin', 'Silver scales', GETDATE(), GETDATE(), 'Available'),
+('Chagoi', 'Light brown, large growth', GETDATE(), GETDATE(), 'Available'),
+('Ogon', 'Solid metallic color', GETDATE(), GETDATE(), 'Available');
+
+-- Insert sample data into KoiFarm table
+INSERT INTO KoiFarm (Farm_Name, Location, Contact, Description, Status) VALUES
+('Sunshine Koi Farm', 'Kyoto, Japan', '5551234561', 'Renowned for quality Kohaku koi.', 'Active'),
+('BlueWave Aquatics', 'Osaka, Japan', '5552345672', 'Specializes in Sanke and Showa varieties.', 'Active'),
+('Mountain Streams', 'Nagoya, Japan', '5553456783', 'Small farm focusing on Tancho koi.', 'Inactive'),
+('Golden Pond Farms', 'Tokyo, Japan', '5554567894', 'Produces a variety of Ginrin koi.', 'Active'),
+('Silver Lake Aquatics', 'Fukuoka, Japan', '5555678905', 'Well-known Asagi koi producer.', 'Active'),
+('Sunset Koi', 'Kyoto, Japan', '5556789016', 'Popular for Ogon koi.', 'Inactive'),
+('Tranquil Waters', 'Kobe, Japan', '5557890127', 'Focus on Chagoi breeding.', 'Active'),
+('Harmony Koi Farm', 'Yokohama, Japan', '5558901238', 'Exclusive Showa koi farm.', 'Active'),
+('Ocean Pearl', 'Hiroshima, Japan', '5559012349', 'Specialized in Bekko koi.', 'Inactive'),
+('Emerald Koi', 'Kagoshima, Japan', '5550123450', 'Focus on unique Tancho variants.', 'Active');
+
+-- Insert sample data into KoiProfile table
+INSERT INTO KoiProfile (Type_Id, Farm_Id, Koi_Name, Quantity, Size, Price, Description, Image, Create_At, Update_At, Rating_Average_Value, Status) VALUES
+(1, 1, 'Sunny', 50, 15.5, 120.0, 'Beautiful white and red Kohaku.', 'image1.jpg', GETDATE(), GETDATE(), 4.5, 'Available'),
+(2, 2, 'Sparky', 40, 20.0, 150.0, 'Classic Sanke pattern.', 'image2.jpg', GETDATE(), GETDATE(), 4.3, 'Available'),
+(3, 3, 'Shadow', 30, 18.0, 200.0, 'Unique Showa color.', 'image3.jpg', GETDATE(), GETDATE(), 4.1, 'Unavailable'),
+(4, 4, 'Spot', 25, 16.0, 140.0, 'Classic Tancho marking.', 'image4.jpg', GETDATE(), GETDATE(), 4.8, 'Available'),
+(5, 5, 'Ruby', 15, 22.0, 180.0, 'Blue scales with red belly.', 'image5.jpg', GETDATE(), GETDATE(), 4.6, 'Available'),
+(6, 6, 'Blue', 50, 17.5, 110.0, 'Asagi pattern.', 'image6.jpg', GETDATE(), GETDATE(), 4.0, 'Unavailable'),
+(7, 7, 'Spots', 35, 19.5, 130.0, 'Black and white Bekko.', 'image7.jpg', GETDATE(), GETDATE(), 4.2, 'Available'),
+(8, 8, 'Glimmer', 40, 14.0, 160.0, 'Silver scale Ginrin.', 'image8.jpg', GETDATE(), GETDATE(), 4.9, 'Available'),
+(9, 9, 'Chief', 45, 23.0, 250.0, 'Large brown Chagoi.', 'image9.jpg', GETDATE(), GETDATE(), 4.4, 'Available'),
+(10, 10, 'Goldie', 20, 15.0, 300.0, 'Solid gold Ogon.', 'image10.jpg', GETDATE(), GETDATE(), 4.7, 'Available');
+
+-- Insert sample data into Order table
+INSERT INTO [Order] (User_Id, Create_At, Total, Delivery_Address, Status) VALUES
+(2, GETDATE(), 500.0, '123 Customer Rd', 'Delivered'),
+(3, GETDATE(), 300.0, '456 Maple Ave', 'Pending'),
+(4, GETDATE(), 450.0, '789 Pine St', 'Shipped'),
+(5, GETDATE(), 600.0, '012 Oak Dr', 'Canceled'),
+(6, GETDATE(), 350.0, '345 Birch Blvd', 'Pending'),
+(7, GETDATE(), 200.0, '678 Cedar Pl', 'Delivered'),
+(8, GETDATE(), 550.0, '890 Redwood Ln', 'Shipped'),
+(9, GETDATE(), 400.0, '901 Aspen Way', 'Pending'),
+(10, GETDATE(), 700.0, '234 Elm Rd', 'Delivered'),
+(1, GETDATE(), 300.0, '456 Admin St', 'Delivered');
+
+-- Insert sample data into OrderDetail table
+INSERT INTO OrderDetail (Order_Id, User_Id, Koi_Id, Quantity, Order_Detail_Type, Total, Create_At, Update_At, Start_At, End_At, Status) VALUES
+(1, 2, 1, 2, 'Purchase', 240.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Completed'),
+(2, 3, 2, 1, 'Purchase', 150.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Processing'),
+(3, 4, 3, 3, 'Purchase', 600.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Shipped'),
+(4, 5, 4, 2, 'Purchase', 280.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Canceled'),
+(5, 6, 5, 1, 'Purchase', 180.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Pending'),
+(6, 7, 6, 2, 'Purchase', 220.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Completed'),
+(7, 8, 7, 1, 'Purchase', 130.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Completed'),
+(8, 9, 8, 1, 'Purchase', 160.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Pending'),
+(9, 10, 9, 2, 'Purchase', 500.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Completed'),
+(10, 1, 10, 1, 'Purchase', 300.0, GETDATE(), GETDATE(), GETDATE(), GETDATE(), 'Completed');
+
+-- Insert sample data into Feedback table
+INSERT INTO Feedback (User_Id, Order_Detail_Id, Description, Create_At, Status) VALUES
+(2, 1, 'Great koi quality and fast delivery!', GETDATE(), 'Approved'),
+(3, 2, 'Satisfied with the purchase.', GETDATE(), 'Approved'),
+(4, 3, 'Koi arrived in good condition.', GETDATE(), 'Approved'),
+(5, 4, 'Order was canceled, but support was helpful.', GETDATE(), 'Rejected'),
+(6, 5, 'Koi size as expected.', GETDATE(), 'Approved'),
+(7, 6, 'Satisfied with the service.', GETDATE(), 'Pending'),
+(8, 7, 'Good purchase experience.', GETDATE(), 'Approved'),
+(9, 8, 'Will order again!', GETDATE(), 'Pending'),
+(10, 9, 'Very happy with the koi.', GETDATE(), 'Approved'),
+(1, 10, 'Excellent quality koi!', GETDATE(), 'Approved');
+
+-- Insert sample data into Rating table
+INSERT INTO Rating (User_Id, Order_Detail_Id, Rating_Value, Description, Create_At, Status) VALUES
+(2, 1, 4.5, 'Beautiful koi, healthy and vibrant.', GETDATE(), 'Visible'),
+(3, 2, 4.0, 'Good quality but delivery was slow.', GETDATE(), 'Visible'),
+(4, 3, 4.8, 'Amazing color and size.', GETDATE(), 'Visible'),
+(5, 4, 3.5, 'Order was canceled, but support helped.', GETDATE(), 'Hidden'),
+(6, 5, 4.3, 'Koi is exactly as described.', GETDATE(), 'Visible'),
+(7, 6, 4.0, 'Met expectations.', GETDATE(), 'Visible'),
+(8, 7, 4.7, 'Very happy with the purchase.', GETDATE(), 'Visible'),
+(9, 8, 5.0, 'Exceeded my expectations.', GETDATE(), 'Visible'),
+(10, 9, 4.2, 'Good value for the price.', GETDATE(), 'Visible'),
+(1, 10, 4.9, 'High-quality koi.', GETDATE(), 'Visible');
