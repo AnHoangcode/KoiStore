@@ -11,6 +11,10 @@ builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IOrderDetailService, OrderDetailService>();
 builder.Services.AddScoped<IKoiTypeService, KoiTypeService>();
 builder.Services.AddScoped<IKoiProfileService, KoiProfileService>();
+builder.Services.AddScoped<IKoiFarmService, KoiFarmService>();
+builder.Services.AddScoped<IFeedbackService, FeedbackService>();
+builder.Services.AddScoped<IUserProfileService, UserProfileService>();
+builder.Services.AddScoped<IRatingService, RatingService>();
 
 builder.Services.AddSession();
 var app = builder.Build();
