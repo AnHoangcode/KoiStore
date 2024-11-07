@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\daos\\userprofiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|solutionrelative:daos\\userprofiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\daos\\ratingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|solutionrelative:daos\\ratingdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\daos\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|solutionrelative:daos\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\daos\\userprofiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|solutionrelative:daos\\userprofiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\daos\\roledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|solutionrelative:daos\\roledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\repositories\\implement\\userprofilerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|solutionrelative:repositories\\implement\\userprofilerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\daos\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52A89DF5-0B35-432D-B2B7-7D98B1E5D9A9}|DAOs\\DAOs.csproj|solutionrelative:daos\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\repositories\\implement\\ratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|solutionrelative:repositories\\implement\\ratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\repositories\\implement\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|solutionrelative:repositories\\implement\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\repositories\\interface\\iratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|solutionrelative:repositories\\interface\\iratingrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\services\\implement\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|solutionrelative:services\\implement\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\services\\interface\\iratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|solutionrelative:services\\interface\\iratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|solutionrelative:services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\services\\interface\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|solutionrelative:services\\interface\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\repositories\\implement\\userprofilerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|solutionrelative:repositories\\implement\\userprofilerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E891A1D2-9E04-4509-AC28-B0DA383FA1E5}|Repositories\\Repositories.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\repositories\\interface\\iuserprofilerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\services\\implement\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|solutionrelative:services\\implement\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|solutionrelative:services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\services\\interface\\iuserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,10 +127,6 @@
       "RelativeMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|solutionrelative:services\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\services\\interface\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{347EF69D-8523-4056-8DD6-A7E221E42ECB}|Services\\Services.csproj|solutionrelative:services\\interface\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6DD8ED03-063A-4C3A-B92F-A16462D415F5}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\businessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DD8ED03-063A-4C3A-B92F-A16462D415F5}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -122,7 +142,72 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "RatingRepo.cs",
+              "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\RatingRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implement\\RatingRepo.cs",
+              "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\RatingRepo.cs",
+              "RelativeToolTip": "Repositories\\Implement\\RatingRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswA0AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T05:32:21.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRatingRepo.cs",
+              "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Interface\\IRatingRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IRatingRepo.cs",
+              "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Interface\\IRatingRepo.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IRatingRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T05:32:04.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RatingService.cs",
+              "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Implement\\RatingService.cs",
+              "RelativeDocumentMoniker": "Services\\Implement\\RatingService.cs",
+              "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Implement\\RatingService.cs",
+              "RelativeToolTip": "Services\\Implement\\RatingService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T05:29:49.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRatingService.cs",
+              "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Interface\\IRatingService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IRatingService.cs",
+              "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Interface\\IRatingService.cs",
+              "RelativeToolTip": "Services\\Interface\\IRatingService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T05:29:39.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RatingDAO.cs",
+              "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\RatingDAO.cs",
+              "RelativeDocumentMoniker": "DAOs\\RatingDAO.cs",
+              "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\RatingDAO.cs",
+              "RelativeToolTip": "DAOs\\RatingDAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T05:27:58.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "UserProfileRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\UserProfileRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Implement\\UserProfileRepo.cs",
@@ -130,12 +215,11 @@
               "RelativeToolTip": "Repositories\\Implement\\UserProfileRepo.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAswA0AAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T05:07:34.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T05:07:34.112Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "IUserProfileRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Interface\\IUserProfileRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Interface\\IUserProfileRepo.cs",
@@ -143,12 +227,11 @@
               "RelativeToolTip": "Repositories\\Interface\\IUserProfileRepo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T05:06:38.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T05:06:38.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "UserProfileService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Implement\\UserProfileService.cs",
               "RelativeDocumentMoniker": "Services\\Implement\\UserProfileService.cs",
@@ -156,12 +239,11 @@
               "RelativeToolTip": "Services\\Implement\\UserProfileService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T05:06:15.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T05:06:15.416Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "IUserProfileService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Interface\\IUserProfileService.cs",
               "RelativeDocumentMoniker": "Services\\Interface\\IUserProfileService.cs",
@@ -169,25 +251,24 @@
               "RelativeToolTip": "Services\\Interface\\IUserProfileService.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T05:06:01.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T05:06:01.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserProfileDAO.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\UserProfileDAO.cs",
               "RelativeDocumentMoniker": "DAOs\\UserProfileDAO.cs",
               "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\UserProfileDAO.cs",
               "RelativeToolTip": "DAOs\\UserProfileDAO.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAQwFsAAAAAAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAuwDMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T05:04:52.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "IKoiTypeService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Interface\\IKoiTypeService.cs",
               "RelativeDocumentMoniker": "Services\\Interface\\IKoiTypeService.cs",
@@ -199,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "KoiTypeRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\KoiTypeRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Implement\\KoiTypeRepo.cs",
@@ -211,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "OrderDetailRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\OrderDetailRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Implement\\OrderDetailRepo.cs",
@@ -223,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "OrderRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\OrderRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Implement\\OrderRepo.cs",
@@ -235,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "KoiProfileService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Implement\\KoiProfileService.cs",
               "RelativeDocumentMoniker": "Services\\Implement\\KoiProfileService.cs",
@@ -247,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "KoiTypeService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Implement\\KoiTypeService.cs",
               "RelativeDocumentMoniker": "Services\\Implement\\KoiTypeService.cs",
@@ -259,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "OrderDetailService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Implement\\OrderDetailService.cs",
               "RelativeDocumentMoniker": "Services\\Implement\\OrderDetailService.cs",
@@ -271,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Implement\\OrderService.cs",
               "RelativeDocumentMoniker": "Services\\Implement\\OrderService.cs",
@@ -279,12 +360,11 @@
               "RelativeToolTip": "Services\\Implement\\OrderService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T04:58:43.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T04:58:43.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Interface\\IOrderService.cs",
               "RelativeDocumentMoniker": "Services\\Interface\\IOrderService.cs",
@@ -296,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\Program.cs",
               "RelativeDocumentMoniker": "RazorPages\\Program.cs",
@@ -308,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "KoiProfileRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\KoiProfileRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Implement\\KoiProfileRepo.cs",
@@ -320,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "RoleRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\RoleRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Implement\\RoleRepo.cs",
@@ -332,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "IRoleRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Interface\\IRoleRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Interface\\IRoleRepo.cs",
@@ -340,12 +420,11 @@
               "RelativeToolTip": "Repositories\\Interface\\IRoleRepo.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T04:26:03.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T04:26:03.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "RoleService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Implement\\RoleService.cs",
               "RelativeDocumentMoniker": "Services\\Implement\\RoleService.cs",
@@ -353,12 +432,11 @@
               "RelativeToolTip": "Services\\Implement\\RoleService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T04:23:30.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T04:23:30.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\Models\\User.cs",
               "RelativeDocumentMoniker": "BusinessObjects\\Models\\User.cs",
@@ -370,19 +448,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 10,
               "Title": "IRoleService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Interface\\IRoleService.cs",
               "RelativeDocumentMoniker": "Services\\Interface\\IRoleService.cs",
               "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Interface\\IRoleService.cs",
               "RelativeToolTip": "Services\\Interface\\IRoleService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T04:19:43.567Z"
+              "WhenOpened": "2024-11-07T04:19:43.567Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Interface\\IUserService.cs",
               "RelativeDocumentMoniker": "Services\\Interface\\IUserService.cs",
@@ -395,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Implement\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\Implement\\UserService.cs",
@@ -403,12 +482,11 @@
               "RelativeToolTip": "Services\\Implement\\UserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T04:18:57.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T04:18:57.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "IUserRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Interface\\IUserRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Interface\\IUserRepo.cs",
@@ -416,18 +494,17 @@
               "RelativeToolTip": "Repositories\\Interface\\IUserRepo.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T04:14:27.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T04:14:27.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserRepo.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\UserRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\Implement\\UserRepo.cs",
               "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Implement\\UserRepo.cs",
               "RelativeToolTip": "Repositories\\Implement\\UserRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T04:14:08.783Z",
               "EditorCaption": ""
@@ -440,14 +517,14 @@
               "RelativeDocumentMoniker": "DAOs\\RoleDAO.cs",
               "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\RoleDAO.cs",
               "RelativeToolTip": "DAOs\\RoleDAO.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAgwFEAAAAcAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAQwFYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T04:12:42.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserDAO.cs",
               "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\UserDAO.cs",
               "RelativeDocumentMoniker": "DAOs\\UserDAO.cs",
