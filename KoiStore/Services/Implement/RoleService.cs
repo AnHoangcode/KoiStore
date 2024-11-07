@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using BusinessObjects.Models;
 using Repositories.Implement;
 using Repositories.Interfaces;
+using Services.Interface;
 
 namespace Services.Implement
 {
-	public class RoleService
+	public class RoleService : IRoleService
 	{
 
         private IRoleRepo _repo = null;

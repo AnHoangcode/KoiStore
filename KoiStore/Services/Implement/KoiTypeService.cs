@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using BusinessObjects.Models;
 using Repositories.Implement;
 using Repositories.Interface;
+using Services.Interface;
 
 namespace Services.Implement
 {
-	public class KoiTypeService
+	public class KoiTypeService : IKoiTypeService
 	{
 
         private IKoiTypeRepo _repo = null;

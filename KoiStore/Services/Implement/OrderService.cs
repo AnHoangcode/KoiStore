@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using BusinessObjects.Models;
 using Repositories.Implement;
 using Repositories.Interfaces;
+using Services.Interface;
 
 namespace Services.Implement
 {
-	public class OrderService
+	public class OrderService : IOrderService
 	{
 
         private IOrderRepo _repo = null;

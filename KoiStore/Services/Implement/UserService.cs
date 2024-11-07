@@ -11,7 +11,7 @@ namespace Services.Implement
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepo _userRepo;
+        private readonly IUserRepo? _userRepo;
         public bool CreateUser(User user)
         {
             return _userRepo.CreateUser(user);
