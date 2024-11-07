@@ -30,14 +30,14 @@ namespace DAOs
 
         public List<Order> GetAllOrders()
         {
-            return _context.Orders.Include(u => u.User_Id).ToList();
+            return _context.Orders.Include(u => u.User).ToList();
         }
 
         public Order GetOrderById(int id)
         {
             try
             {
-                return _context.Orders.Include(u => u.User_Id).SingleOrDefault(o => o.Order_Id == id);
+                return _context.Orders.Include(u => u.User).SingleOrDefault(o => o.Order_Id == id);
             }
             catch (Exception ex)
             {

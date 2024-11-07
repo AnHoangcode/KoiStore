@@ -30,14 +30,14 @@ namespace DAOs
 
         public List<KoiProfile> GetAllKoiProfiles()
         {
-            return _context.KoiProfiles.Include(t => t.Type_Id).Include(f => f.Farm_Id).ToList();
+            return _context.KoiProfiles.Include(t => t.Type).Include(f => f.Farm).ToList();
         }
 
         public KoiProfile GetKoiProfileById(int id)
         {
             try
             {
-                return _context.KoiProfiles.Include(t => t.Type_Id).Include(f => f.Farm_Id).SingleOrDefault(o => o.Koi_Id == id);
+                return _context.KoiProfiles.Include(t => t.Type).Include(f => f.Farm).SingleOrDefault(o => o.Koi_Id == id);
             }
             catch (Exception ex)
             {
