@@ -45,6 +45,20 @@ namespace DAOs
             }
         }
 
+        public List<Order> GetOrdersByUserId(int userId)
+        {
+            try
+            {
+                return _context.Orders
+                    .Include(o => o.User) 
+                    .Where(o => o.User_Id == userId) 
+                    .ToList(); 
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
         public bool CreateOrder(Order o)
         {

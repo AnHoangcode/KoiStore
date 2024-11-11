@@ -26,5 +26,6 @@ namespace Repositories.Implement
 
         public bool CreateOrder(Order o)
         => OrderDAO.Instance.CreateOrder(o);
+        public List<Order> GetOrdersByUserId(int userId) => OrderDAO.Instance.GetOrdersByUserId(userId);
     }
 }

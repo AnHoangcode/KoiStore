@@ -19,5 +19,8 @@ namespace Services.Interface
 		bool UpdateOrder(Order o);
 
 		bool CreateOrder(Order o);
-	}
+
+		List<Order> GetOrdersByUserId(int userId);
+
+    }
 }

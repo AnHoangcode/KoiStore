@@ -18,5 +18,7 @@ namespace Repositories.Interfaces
         bool UpdateOrder(Order o);
 
         bool CreateOrder(Order o);
+
+        List<Order> GetOrdersByUserId(int userId);
     }
 }

@@ -45,5 +45,11 @@ namespace Services.Implement
         {
             return _repo.CreateOrder(o);
         }
-	}
+
+        public List<Order> GetOrdersByUserId(int userId)
+        {
+            return _repo.GetOrdersByUserId(userId);
+        }
+
+    }
 }
