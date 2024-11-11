@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|c:\\users\\admin\\desktop\\fpt\\cn7\\prn221\\koistore\\koistore\\razorpages\\pages\\userpage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|solutionrelative:razorpages\\pages\\userpage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|c:\\users\\admin\\desktop\\fpt\\cn7\\prn221\\koistore\\koistore\\razorpages\\pages\\userpage\\home.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|solutionrelative:razorpages\\pages\\userpage\\home.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|c:\\users\\admin\\desktop\\fpt\\cn7\\prn221\\koistore\\koistore\\razorpages\\pages\\permission.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|solutionrelative:razorpages\\pages\\permission.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|c:\\users\\admin\\desktop\\fpt\\cn7\\prn221\\koistore\\koistore\\razorpages\\pages\\permission.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|solutionrelative:razorpages\\pages\\permission.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|c:\\users\\admin\\desktop\\fpt\\cn7\\prn221\\koistore\\koistore\\razorpages\\pages\\userpage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|solutionrelative:razorpages\\pages\\userpage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|c:\\users\\admin\\desktop\\fpt\\cn7\\prn221\\koistore\\koistore\\razorpages\\pages\\userpage\\home.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|solutionrelative:razorpages\\pages\\userpage\\home.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|c:\\users\\admin\\desktop\\fpt\\cn7\\prn221\\koistore\\koistore\\razorpages\\pages\\userpage\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -302,19 +302,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Permission.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\Permission.cshtml.cs",
-              "RelativeDocumentMoniker": "RazorPages\\Pages\\Permission.cshtml.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\Permission.cshtml.cs",
-              "RelativeToolTip": "RazorPages\\Pages\\Permission.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T17:06:35.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "UserRepo.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\Repositories\\Implement\\UserRepo.cs",
@@ -354,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "RazorPages\\Pages\\Shared\\_Layout.cshtml",
@@ -367,20 +354,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Home.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\UserPage\\Home.cshtml.cs",
               "RelativeDocumentMoniker": "RazorPages\\Pages\\UserPage\\Home.cshtml.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\UserPage\\Home.cshtml.cs",
               "RelativeToolTip": "RazorPages\\Pages\\UserPage\\Home.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T10:37:11.298Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Permission.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\Permission.cshtml",
               "RelativeDocumentMoniker": "RazorPages\\Pages\\Permission.cshtml",
@@ -389,6 +376,32 @@
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAEAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-11T16:40:04.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\UserPage\\Home.cshtml",
+              "RelativeDocumentMoniker": "RazorPages\\Pages\\UserPage\\Home.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\UserPage\\Home.cshtml",
+              "RelativeToolTip": "RazorPages\\Pages\\UserPage\\Home.cshtml",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAUwHQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T10:35:17.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Permission.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\Permission.cshtml.cs",
+              "RelativeDocumentMoniker": "RazorPages\\Pages\\Permission.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\Permission.cshtml.cs",
+              "RelativeToolTip": "RazorPages\\Pages\\Permission.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T17:06:35.174Z",
               "EditorCaption": ""
             },
             {
@@ -402,19 +415,6 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T06:39:54.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Home.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\UserPage\\Home.cshtml",
-              "RelativeDocumentMoniker": "RazorPages\\Pages\\UserPage\\Home.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\FPT\\CN7\\PRN221\\KoiStore\\KoiStore\\RazorPages\\Pages\\UserPage\\Home.cshtml",
-              "RelativeToolTip": "RazorPages\\Pages\\UserPage\\Home.cshtml",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T10:35:17.273Z",
               "EditorCaption": ""
             },
             {

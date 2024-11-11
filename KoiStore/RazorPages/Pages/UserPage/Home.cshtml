@@ -71,7 +71,7 @@
 
         .product-card {
             width: 250px;
-            height: 350px;
+            height: 380px; /* Tăng chiều cao để đủ chứa button */
             border: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
@@ -90,8 +90,9 @@
             padding: 10px;
             font-size: 14px;
             color: #333;
-            height: 120px;
+            height: 100px; /* Điều chỉnh lại chiều cao nếu cần */
             overflow: hidden;
+            margin-bottom: 10px;
         }
 
         .product-card h3 {
@@ -108,6 +109,26 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             transform: translateY(-5px);
         }
+
+        /* Nút Buy */
+        .buy-button {
+            margin-top: 10px;
+            padding: 10px 40px;
+            font-size: 16px;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+            .buy-button:hover {
+                background-color: #218838;
+                color: white;
+            }
 
         /* Pagination styling đẹp hơn với trang hiện tại nổi bật */
         .pagination {
@@ -161,13 +182,12 @@
             <h2 style="margin: 0; font-size: 24px; color: #333;">Featured Products</h2>
             <form method="get" class="search-form" style="display: flex; align-items: center; gap: 10px;">
                 <input type="text" name="searchTerm" value="@Model.SearchTerm" placeholder="Tìm kiếm sản phẩm" style="padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;" />
-                <button type="submit" class="btn btn-secondary" style="padding: 8px 16px; background-color: #FF6347; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                <button type="submit" class="btn btn-secondary" style="margin-top:10px;padding: 8px 16px; background-color: #FF6347; color: white; border: none; border-radius: 4px; cursor: pointer;">
                     Tìm kiếm
                 </button>
             </form>
         </div>
 
-        
         <div class="featured-products">
             @foreach (var koi in Model.KoiProfiles)
             {
@@ -175,10 +195,11 @@
                     <img src="https://cakoibienhoa.com/public/userfiles/products/ca-koi-kohaku.jpg" alt="@koi.Koi_Name" />
                     <div class="product-description">
                         <h3>@koi.Koi_Name</h3>
-                        <p>@koi.Description</p>
                         <p>Size: @koi.Size cm</p>
                         <p>Price: $@koi.Price</p>
                     </div>
+                    <!-- Nút Buy ở cuối thẻ -->
+                    <a href="@Url.Action("Buy", "Product", new { id = koi.Koi_Id })" class="buy-button">Buy</a>
                 </div>
             }
         </div>
