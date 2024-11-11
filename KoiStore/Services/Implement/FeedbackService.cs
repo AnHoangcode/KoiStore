@@ -1,4 +1,5 @@
 ﻿using BusinessObjects.Models;
+using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
 using System;
@@ -11,7 +12,15 @@ namespace Services.Implement
 {
     public class FeedbackService : IFeedbackService
     {
-        private readonly IFeedbackRepo _repo;
+        private readonly IFeedbackRepo _repo = null;
+
+        public FeedbackService()
+        {
+            if (_repo == null)
+            {
+                _repo = new FeedbackRepo();
+            }
+        }
         public bool CreateFeedback(Feedback o) => _repo.CreateFeedback(o);
 
         public bool DeleteFeedback(int id) => _repo.DeleteFeedback(id);
