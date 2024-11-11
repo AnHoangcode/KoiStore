@@ -8,12 +8,107 @@
         Response.Redirect("../Permission");
     }
 }
-<h1>@ViewData["Title"]</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* Thiết lập chung */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-<p>Welcome to Koi Store – Your Premium Destination for Koi Fish</p>
+        .about-container {
+            max-width: 90%;
+            margin: auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
 
-<p>At Koi Store, we specialize in providing high-quality Koi fish for enthusiasts and collectors. Whether you're a beginner or an experienced hobbyist, our diverse selection of beautiful Koi will enhance your pond or water garden. We carefully source our fish from trusted breeders, ensuring healthy and vibrant specimens in a variety of colors and sizes.</p>
+        /* Phần tiêu đề */
+        .about-title {
+            text-align: center;
+            color: #007bff;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
 
-<p>In addition to our wide range of Koi, we offer expert advice on pond setup, fish care, and maintenance to help you create the perfect aquatic environment. Join our community of passionate Koi lovers and experience the beauty and serenity that these magnificent fish bring to your home.</p>
+        /* Hình ảnh */
+        .about-image {
+            width: 100%;
+            height: 300px;
+            background-image: url('https://cdn.tuoitre.vn/thumb_w/480/2021/2/4/photo-1-1612402298157895451843.jpg');
+            background-size: contain; /* Đảm bảo toàn bộ ảnh hiển thị trong khung */
+            background-repeat: no-repeat; /* Ngăn ảnh lặp lại */
+            background-position: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
 
-<p>Explore our collection today and find the perfect Koi for your pond!</p>
+
+        /* Phần nội dung */
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        /* Phần highlight */
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Cấu trúc nút CTA */
+        .cta-button {
+            display: block;
+            margin: 30px auto 0;
+            padding: 12px 30px;
+            background-color: #FF6347;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #fa2600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-container">
+        <h1 class="about-title">About Us</h1>
+
+        <div class="about-image"></div>
+
+        <div class="about-content">
+            <p>Welcome to <span class="highlight">Koi Store</span> – Your Premium Destination for Koi Fish!</p>
+
+            <p>At Koi Store, we are passionate about bringing the beauty and tranquility of Koi fish to homes and businesses. We specialize in high-quality Koi for enthusiasts and collectors, offering a diverse selection of vibrant and healthy fish that are perfect for any pond or water garden.</p>
+
+            <p>Our expert team meticulously sources each Koi from trusted breeders, ensuring every fish meets our rigorous standards for health and quality. Whether you are a beginner or an experienced hobbyist, we have the perfect Koi to suit your tastes and needs.</p>
+
+            <p>Beyond providing exceptional Koi, we are dedicated to supporting you with expert advice on pond setup, fish care, and maintenance. Join our community of passionate Koi lovers, and let us help you create the ideal aquatic environment that reflects the elegance and grace of these remarkable fish.</p>
+
+            <p>Explore our collection today and find your perfect Koi!</p>
+        </div>
+
+        <a href="/KoiCollection" class="cta-button">Explore Our Koi Collection</a>
+    </div>
+
+</body>
+</html>
