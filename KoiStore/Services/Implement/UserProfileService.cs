@@ -1,4 +1,5 @@
 ﻿using BusinessObjects.Models;
+using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
 using System;
@@ -11,7 +12,15 @@ namespace Services.Implement
 {
     public class UserProfileService : IUserProfileService
     {
-        private readonly IUserProfileRepo? _userProfileRepo;
+        private readonly IUserProfileRepo? _userProfileRepo = null;
+
+        public UserProfileService()
+        {
+            if (_userProfileRepo == null)
+            {
+                _userProfileRepo = new UserProfileRepo();
+            }
+        }
         public bool CreateUserProfile(UserProfile o) => _userProfileRepo.CreateUserProfile(o);
 
         public bool DeleteUserProfile(int id) => _userProfileRepo.DeleteUserProfile(id);
