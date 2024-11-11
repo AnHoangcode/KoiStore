@@ -1,4 +1,5 @@
 ﻿using BusinessObjects.Models;
+using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
 using System;
@@ -11,7 +12,15 @@ namespace Services.Implement
 {
     public class RatingService : IRatingService
     {
-        private readonly IRatingRepo? _repo;
+        private readonly IRatingRepo? _repo = null;
+
+        public RatingService()
+        {
+            if (_repo == null)
+            {
+                _repo = new RatingRepo();
+            }
+        }
         public bool CreateRating(Rating o) => _repo.CreateRating(o);
 
         public bool DeleteRating(int id) => _repo.DeleteRating(id);
