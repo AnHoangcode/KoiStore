@@ -18,10 +18,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\FPT\CN7\PRN221\KoiStore\KoiStore\RazorPages
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/About us.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQgdXMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,12 +42,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Permission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVybWlzc2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Shared/_ValidationScriptsPartial.cshtml]
@@ -60,6 +56,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UploadFile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBsb2FkRmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/_ViewImports.cshtml]

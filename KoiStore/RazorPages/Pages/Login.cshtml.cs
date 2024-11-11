@@ -31,7 +31,7 @@ namespace RazorPages.Pages
 				else if(roleId == 2)
 				{
                     HttpContext.Session.SetString("roleId", roleId.ToString());
-                    Response.Redirect("/Index");
+                    Response.Redirect("/UserPage/Home");
                 }
 				else
 				{

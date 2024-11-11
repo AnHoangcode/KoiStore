@@ -1,7 +1,12 @@
 ﻿@page
-@model Pages_About_us
+@model AboutUs
 @{
     ViewData["Title"] = "About Us";
+    int roleId = int.Parse(HttpContext.Session.GetString("roleId"));
+    if (roleId != 2)
+    {
+        Response.Redirect("../Permission");
+    }
 }
 <h1>@ViewData["Title"]</h1>
 

@@ -1,13 +1,22 @@
 ﻿@page
-@model IndexModel
+@model Home
 @using X.PagedList.Mvc.Core
 @using X.PagedList
+
+@{
+    ViewData["Home"] = "Home";
+    int roleId = int.Parse(HttpContext.Session.GetString("roleId"));
+    if (roleId != 2)
+    {
+        Response.Redirect("../Permission");
+    }
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]</title>
+    <title>@ViewData["Home"]</title>
     <style>
         /* Tổng thể cho trang */
         html, body {
@@ -100,7 +109,7 @@
             transform: translateY(-5px);
         }
 
-        /* Pagination styling */
+        /* Pagination styling đẹp hơn với trang hiện tại nổi bật */
         .pagination {
             display: flex;
             justify-content: center;
@@ -113,24 +122,35 @@
             .pagination .PagedList-skipToPrevious,
             .pagination .PagedList-skipToFirst,
             .pagination .PagedList-page {
-                padding: 8px 12px;
-                background-color: #e9ecef;
+                padding: 8px 14px;
+                background-color: #f8f9fa;
                 color: #333;
                 border: 1px solid #ddd;
-                border-radius: 4px;
+                border-radius: 50%; /* Bo tròn */
                 text-decoration: none;
-                transition: background-color 0.3s;
+                font-size: 14px;
+                transition: background-color 0.3s, color 0.3s;
             }
 
-                .pagination .PagedList-page.active,
+                /* Làm nổi bật trang hiện tại */
+                .pagination .PagedList-page.active {
+                    background-color: #007bff;
+                    color: #fff;
+                    font-weight: bold;
+                    border-color: #007bff;
+                }
+
+                /* Hiệu ứng khi di chuột */
                 .pagination .PagedList-page:hover,
                 .pagination .PagedList-skipToNext:hover,
                 .pagination .PagedList-skipToLast:hover,
                 .pagination .PagedList-skipToPrevious:hover,
                 .pagination .PagedList-skipToFirst:hover {
-                    background-color: #007bff;
+                    background-color: #0056b3;
                     color: #fff;
+                    border-color: #0056b3;
                 }
+
     </style>
 </head>
 <body>
@@ -165,7 +185,7 @@
     </div>
 
     <div class="pagination">
-        @Html.PagedListPager(Model.KoiProfiles, page => Url.Page("Index", new { pageNumber = page, searchTerm = Model.SearchTerm }), PagedListRenderOptions.Classic)
+        @Html.PagedListPager(Model.KoiProfiles, page => Url.Page("Home", new { pageNumber = page, searchTerm = Model.SearchTerm }), PagedListRenderOptions.Classic)
     </div>
 </body>
 </html>

@@ -5,14 +5,14 @@ using Services.Interface;
 using X.PagedList;
 using X.PagedList.Extensions;
 
-namespace RazorPages.Pages
+namespace RazorPages.Pages.UserPage
 {
-    public class IndexModel : PageModel
+    public class Home : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        private readonly ILogger<Home> _logger;
         private readonly IKoiProfileService _koi;
 
-        public IndexModel(ILogger<IndexModel> logger, IKoiProfileService koi)
+        public Home(ILogger<Home> logger, IKoiProfileService koi)
         {
             _logger = logger;
             _koi = koi;
