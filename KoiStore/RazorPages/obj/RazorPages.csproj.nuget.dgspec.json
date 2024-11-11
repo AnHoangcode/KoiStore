@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj": {}
+    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj": {}
   },
   "projects": {
-    "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj": {
+    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj",
-        "projectName": "RazorPages",
-        "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj",
-        "packagesPath": "C:\\Users\\minha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\obj\\",
+        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj",
+        "projectName": "BusinessObjects",
+        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj",
+        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
+        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\minha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,93 @@
           "warnAsError": [
             "NU1605"
           ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.30, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj",
+        "projectName": "DAOs",
+        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj",
+        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
+        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
         }
       },
       "frameworks": {
@@ -55,6 +137,117 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj",
+        "projectName": "RazorPages",
+        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj",
+        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
+        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj": {
+                "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.35, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.35, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.35, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -63,7 +256,153 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj",
+        "projectName": "Repositories",
+        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
+        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj": {
+                "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
+        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj": {
+                "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

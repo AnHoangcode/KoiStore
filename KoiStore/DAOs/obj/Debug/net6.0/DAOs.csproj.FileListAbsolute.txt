@@ -1,0 +1,16 @@
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\bin\Debug\net6.0\DAOs.deps.json
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\bin\Debug\net6.0\DAOs.dll
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\bin\Debug\net6.0\DAOs.pdb
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\bin\Debug\net6.0\BusinessObjects.dll
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\bin\Debug\net6.0\BusinessObjects.pdb
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\DAOs.csproj.AssemblyReference.cache
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\DAOs.GeneratedMSBuildEditorConfig.editorconfig
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\DAOs.AssemblyInfoInputs.cache
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\DAOs.AssemblyInfo.cs
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\DAOs.csproj.CoreCompileInputs.cache
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\DAOs.sourcelink.json
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\DAOs.dll
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\refint\DAOs.dll
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\DAOs.pdb
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\ref\DAOs.dll
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\DAOs\obj\Debug\net6.0\DAOs.csproj.Up2Date

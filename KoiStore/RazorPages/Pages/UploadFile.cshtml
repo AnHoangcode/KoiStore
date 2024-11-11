@@ -1,0 +1,41 @@
+﻿@page
+@using YourNamespace.Pages
+@model UploadFileModel
+@{
+    ViewData["Title"] = "Upload File";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+
+        <!-- Form Upload -->
+        <form method="post" enctype="multipart/form-data">
+            <div>
+                <label for="fileUpload">Choose an image to upload:</label>
+                <input type="file" name="fileUpload" id="fileUpload" accept="image/*" />
+            </div>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <!-- Thông báo khi upload thành công -->
+        @if (Model.UploadSuccess)
+        {
+            <p>Image uploaded successfully!</p>
+        }
+
+        <!-- Thông báo lỗi nếu upload không thành công -->
+        @if (Model.UploadSuccess == false)
+        {
+            <p>There was an issue with the file upload. Please try again.</p>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿@page
+@model RazorPages.Pages.AdminPage.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>KoiProfile</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Koi_Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Koi_Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Quantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Quantity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Size)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Size)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Image)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Image)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Create_At)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Create_At)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Update_At)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Update_At)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Rating_Average_Value)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Rating_Average_Value)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Status)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Farm)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Farm.Farm_Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.KoiProfile.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.KoiProfile.Type.Type_Id)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="KoiProfile.Koi_Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

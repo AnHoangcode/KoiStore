@@ -1,3 +1,5 @@
+using Repositories.Implement;
+using Repositories.Interface;
 using Services.Implement;
 using Services.Interface;
 
@@ -15,6 +17,8 @@ builder.Services.AddScoped<IKoiFarmService, KoiFarmService>();
 builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 builder.Services.AddScoped<IUserProfileService, UserProfileService>();
 builder.Services.AddScoped<IRatingService, RatingService>();
+builder.Services.AddScoped<IKoiFarmRepo, KoiFarmRepo>();
+
 
 builder.Services.AddSession();
 var app = builder.Build();

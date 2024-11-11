@@ -7,12 +7,60 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RazorPages.styles.css" asp-append-version="true" />
+    <style>
+        .navbar {
+            background-color: #FF6347;
+        }
+
+            .navbar .nav-link, .navbar .navbar-brand {
+                color: #FFFFFF;
+            }
+
+                .navbar .nav-link:hover {
+                    color: #FFDAB9;
+                }
+
+        footer {
+            background-color: #333333;
+            color: #FFFFFF;
+            padding: 1px 0;
+            font-size: 14px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+            footer p {
+                margin: 1px 0;
+            }
+
+            footer a {
+                color: #FFD700;
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    color: #FFA500;
+                    text-decoration: underline;
+                }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">RazorPages</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,16 +68,17 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/About us">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="" asp-page="/Login">Login</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -38,7 +87,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - RazorPages - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <p>Hotline: 0123456789</p>
         </div>
     </footer>
 

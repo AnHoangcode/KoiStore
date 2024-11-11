@@ -13,6 +13,10 @@ namespace Services.Implement
     public class KoiFarmService : IKoiFarmService
     {
         private readonly IKoiFarmRepo? _repo;
+        public KoiFarmService(IKoiFarmRepo repo)
+        {
+            _repo = repo ?? throw new ArgumentNullException(nameof(repo));
+        }
         public bool CreateKoiFarm(KoiFarm o) => _repo.CreateKoiFarm(o);
 
         public bool DeleteKoiFarm(int id) => _repo.DeleteKoiFarm(id);
