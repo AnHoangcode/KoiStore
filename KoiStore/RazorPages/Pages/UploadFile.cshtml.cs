@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.IO;
 using System.Threading.Tasks;
@@ -9,26 +9,26 @@ namespace YourNamespace.Pages
     {
         public bool UploadSuccess { get; set; }
 
-        // X? l� upload file
+        // Xử lý upload file
         public async Task OnPostAsync(IFormFile fileUpload)
         {
             if (fileUpload != null && fileUpload.Length > 0)
             {
-                // ???ng d?n l?u t?p trong th? m?c wwwroot/images
+                // Đường dẫn lưu tệp trong thư mục wwwroot/images
                 var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileUpload.FileName);
 
-                // L?u t?p v�o th? m?c wwwroot/images
+                // Lưu tệp vào thư mục wwwroot/images
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await fileUpload.CopyToAsync(stream);
                 }
 
-                // ?�nh d?u upload th�nh c�ng
+                // Đánh dấu upload thành công
                 UploadSuccess = true;
             }
             else
             {
-                // N?u kh�ng c� t?p ho?c t?p kh�ng h?p l?
+                // Néu không có tệp hoặc tệp không hợp lệ
                 UploadSuccess = false;
             }
         }

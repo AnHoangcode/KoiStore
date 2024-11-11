@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+4JL762Ge3TtJnVnuvpXH0SRtZhclQSQ2HkaF/1ZKnfh3QJJBB8lfNwoPxpvUCFT0IxG80gXD9sjF4jMaZ5vqQ==",
+  "dgSpecHash": "6HezR+5ziM0jyA+gW4MkeA/7WtMfbmpCZxFxm+r4cNNiP9gneD/yiMjg5IPHDYw8JSCcOz4TilOBJg8mLXCqfg==",
   "success": true,
   "projectFilePath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj",
   "expectedPackageFiles": [
@@ -52,8 +52,8 @@
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\Quoc.Bao\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Quoc.Bao\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
   ],
   "logs": []

@@ -15,14 +15,15 @@
             height: 100%;
             margin: 0;
             overflow-y: auto;
+            font-family: Arial, sans-serif;
         }
 
         .hero-image {
             background-image: url('/images/fachry-zella-devandra-9PhjFydFY5Q-unsplash.jpg');
             background-size: cover;
-            background-position: center;
-            height: 100vh; 
-            width: 120%;
+            background-position: left;
+            height: 100vh;
+            width: 117%;
             margin-top: -5mm;
             margin-left: -30mm;
         }
@@ -32,30 +33,96 @@
             text-align: center;
             padding: 20px;
         }
+
+        .featured-products {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            width: 250px;
+            height: 350px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+            .product-card img {
+                width: 100%;
+                height: 60%;
+                object-fit: cover;
+                background-color: #e0e0e0;
+            }
+
+        .product-description {
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+            height: 120px; 
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
     </style>
 </head>
 <body>
     <div class="hero-image">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 
     <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- Sản phẩm nổi bật -->
+        <h2>Featured Products</h2>
+        <div class="featured-products">
+            <!-- Khung sản phẩm 1 -->
+            <div class="product-card">
+                <img src="/images/product1.jpg" alt="Product 1">
+                <div class="product-description">
+                    
+                </div>
+            </div>
+
+            <!-- Khung sản phẩm 2 -->
+            <div class="product-card">
+                <img src="/images/product2.jpg" alt="Product 2">
+                <div class="product-description">
+                    
+                </div>
+            </div>
+
+            <!-- Khung sản phẩm 3 -->
+            <div class="product-card">
+                <img src="/images/product3.jpg" alt="Product 3">
+                <div class="product-description">
+                    
+                </div>
+            </div>
+
+            <!-- Khung sản phẩm 4 -->
+            <div class="product-card">
+                <img src="/images/product4.jpg" alt="Product 4">
+                <div class="product-description">
+                    
+                </div>
+            </div>
+
+            <!-- Khung sản phẩm 5 -->
+            <div class="product-card">
+                <img src="/images/product5.jpg" alt="Product 5">
+                <div class="product-description">
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

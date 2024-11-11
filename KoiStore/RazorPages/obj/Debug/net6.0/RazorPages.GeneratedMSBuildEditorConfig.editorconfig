@@ -22,16 +22,32 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQgdXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/SEM7/PRN221/Project/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEM7/PRN221/Project/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEM7/PRN221/Project/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEM7/PRN221/Project/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SEM7/PRN221/Project/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/SEM7/PRN221/Project/KoiStore/KoiStore/RazorPages/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SEM7/PRN221/Project/KoiStore/KoiStore/RazorPages/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SEM7/PRN221/Project/KoiStore/KoiStore/RazorPages/Pages/KoiFish.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pRmlzaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SEM7/PRN221/Project/KoiStore/KoiStore/RazorPages/Pages/Login.cshtml]

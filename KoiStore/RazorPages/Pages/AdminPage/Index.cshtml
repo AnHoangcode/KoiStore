@@ -1,0 +1,112 @@
+﻿@page
+@model RazorPages.Pages.AdminPage.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Koi_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Create_At)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Update_At)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Rating_Average_Value)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Farm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KoiProfile[0].Type)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.KoiProfile) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Koi_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Create_At)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Update_At)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating_Average_Value)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Farm.Farm_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type.Type_Id)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Koi_Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Koi_Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Koi_Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    @if (Model.PageNumber > 1)
+    {
+        <a asp-page="./Index" asp-route-pageNumber="@(Model.PageNumber - 1)">Previous</a>
+    }
+    @if (Model.PageNumber < Model.TotalPages)
+    {
+        <a asp-page="./Index" asp-route-pageNumber="@(Model.PageNumber + 1)">Next</a>
+    }
+</div>
