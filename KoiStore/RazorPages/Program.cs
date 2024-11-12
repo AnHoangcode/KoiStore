@@ -19,6 +19,8 @@ builder.Services.AddScoped<IUserProfileService, UserProfileService>();
 builder.Services.AddScoped<IRatingService, RatingService>();
 builder.Services.AddScoped<IKoiFarmRepo, KoiFarmRepo>();
 builder.Services.AddScoped<IUserRepo, UserRepo>();
+builder.Services.AddScoped<IUserProfileRepo, UserProfileRepo>();
+
 
 
 builder.Services.AddSession();
