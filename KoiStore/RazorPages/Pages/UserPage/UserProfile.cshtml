@@ -1,57 +1,118 @@
-﻿@page 
+﻿@page
 @model RazorPages.Pages.UserPage.UserProfileModel
 @{
-    ViewData["Title"] = "UserProfile";
+    ViewData["Title"] = "User Profile";
 }
 
-<h2>User Profile</h2>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header text-center  text-white" style="background-color: #FF6347;">
+            <h2>User Profile</h2>
+        </div>
+        <div class="card-body">
+            <form method="post" id="profileForm">
+                <div class="row mb-3">
+                    <div class="col-md-4 font-weight-bold">
+                        <label asp-for="UserProfile.FirstName" class="control-label"></label>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="form-control-plaintext view-mode">@Model.UserProfile.FirstName</p>
+                        <input asp-for="UserProfile.FirstName" class="form-control edit-mode" style="display:none;" />
+                    </div>
+                </div>
 
-<form method="post">
-    <div class="form-group">
-        <label asp-for="UserProfile.FirstName" class="control-label"></label>
-        <input asp-for="UserProfile.FirstName" class="form-control" />
-        <span asp-validation-for="UserProfile.FirstName" class="text-danger"></span>
+                <div class="row mb-3">
+                    <div class="col-md-4 font-weight-bold">
+                        <label asp-for="UserProfile.LastName" class="control-label"></label>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="form-control-plaintext view-mode">@Model.UserProfile.LastName</p>
+                        <input asp-for="UserProfile.LastName" class="form-control edit-mode" style="display:none;" />
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4 font-weight-bold">
+                        <label asp-for="UserProfile.Email" class="control-label"></label>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="form-control-plaintext view-mode">@Model.UserProfile.Email</p>
+                        <input asp-for="UserProfile.Email" class="form-control edit-mode" style="display:none;" />
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4 font-weight-bold">
+                        <label asp-for="UserProfile.PhoneNumber" class="control-label"></label>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="form-control-plaintext view-mode">@Model.UserProfile.PhoneNumber</p>
+                        <input asp-for="UserProfile.PhoneNumber" class="form-control edit-mode" style="display:none;" />
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4 font-weight-bold">
+                        <label asp-for="UserProfile.Address" class="control-label"></label>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="form-control-plaintext view-mode">@Model.UserProfile.Address</p>
+                        <input asp-for="UserProfile.Address" class="form-control edit-mode" style="display:none;" />
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4 font-weight-bold">
+                        <label asp-for="UserProfile.Gender" class="control-label"></label>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="form-control-plaintext view-mode">@Model.UserProfile.Gender</p>
+                        <select asp-for="UserProfile.Gender" class="form-control edit-mode" style="display:none;">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4 font-weight-bold">
+                        <label asp-for="UserProfile.DateOfBirth" class="control-label"></label>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="form-control-plaintext view-mode">@Model.UserProfile.DateOfBirth</p>
+                        <input asp-for="UserProfile.DateOfBirth" class="form-control edit-mode" style="display:none;" placeholder="yyyy-MM-dd" />
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-secondary" id="editButton" onclick="toggleEdit()">Edit</button>
+                    <button type="submit" class="btn btn-primary edit-mode" style="display:none;" id="saveButton">Save</button>
+                    <button type="button" class="btn btn-danger edit-mode" style="display:none;" onclick="toggleEdit()">Cancel</button>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 
-    <div class="form-group">
-        <label asp-for="UserProfile.LastName" class="control-label"></label>
-        <input asp-for="UserProfile.LastName" class="form-control" />
-        <span asp-validation-for="UserProfile.LastName" class="text-danger"></span>
-    </div>
+@section Scripts {
+    <script>
+        function toggleEdit() {
+            const viewModeElements = document.querySelectorAll('.view-mode');
+            const editModeElements = document.querySelectorAll('.edit-mode');
+            const editButton = document.getElementById('editButton');
+            const saveButton = document.getElementById('saveButton');
 
-    <div class="form-group">
-        <label asp-for="UserProfile.Email" class="control-label"></label>
-        <input asp-for="UserProfile.Email" class="form-control" />
-        <span asp-validation-for="UserProfile.Email" class="text-danger"></span>
-    </div>
+            viewModeElements.forEach(el => el.style.display = el.style.display === 'none' ? '' : 'none');
+            editModeElements.forEach(el => el.style.display = el.style.display === 'none' ? '' : 'none');
 
-    <div class="form-group">
-        <label asp-for="UserProfile.PhoneNumber" class="control-label"></label>
-        <input asp-for="UserProfile.PhoneNumber" class="form-control" />
-        <span asp-validation-for="UserProfile.PhoneNumber" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="UserProfile.Address" class="control-label"></label>
-        <input asp-for="UserProfile.Address" class="form-control" />
-        <span asp-validation-for="UserProfile.Address" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="UserProfile.Gender" class="control-label"></label>
-        <select asp-for="UserProfile.Gender" class="form-control">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-        </select>
-        <span asp-validation-for="UserProfile.Gender" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="UserProfile.DateOfBirth" class="control-label"></label>
-        <input asp-for="UserProfile.DateOfBirth" class="form-control" placeholder="yyyy-MM-dd" />
-        <span asp-validation-for="UserProfile.DateOfBirth" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Save</button>
-</form>
+            if (editButton.style.display === 'none') {
+                editButton.style.display = '';
+                saveButton.style.display = 'none';
+            } else {
+                editButton.style.display = 'none';
+                saveButton.style.display = '';
+            }
+        }
+    </script>
+}
