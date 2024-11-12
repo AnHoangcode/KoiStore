@@ -2,89 +2,100 @@
 @model RazorPages.Pages.AdminPage.EditModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Koi Profile";
 }
 
-<h1>Edit</h1>
+<h1>Edit Koi Profile</h1>
 
-<h4>KoiProfile</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-8 offset-md-2">
         <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="KoiProfile.Koi_Id" />
-            <div class="form-group">
-                <label asp-for="KoiProfile.Type_Id" class="control-label"></label>
-                <select asp-for="KoiProfile.Type_Id" class="form-control" asp-items="ViewBag.Type_Id"></select>
-                <span asp-validation-for="KoiProfile.Type_Id" class="text-danger"></span>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Type_Id" class="control-label"></label>
+                        <select asp-for="KoiProfile.Type_Id" class="form-control" asp-items="ViewBag.Type_Id"></select>
+                        <span asp-validation-for="KoiProfile.Type_Id" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Farm_Id" class="control-label"></label>
+                        <select asp-for="KoiProfile.Farm_Id" class="form-control" asp-items="ViewBag.Farm_Id"></select>
+                        <span asp-validation-for="KoiProfile.Farm_Id" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Koi_Name" class="control-label"></label>
+                        <input asp-for="KoiProfile.Koi_Name" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Koi_Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Quantity" class="control-label"></label>
+                        <input asp-for="KoiProfile.Quantity" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Quantity" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Size" class="control-label"></label>
+                        <input asp-for="KoiProfile.Size" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Size" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Price" class="control-label"></label>
+                        <input asp-for="KoiProfile.Price" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Price" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Description" class="control-label"></label>
+                        <input asp-for="KoiProfile.Description" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Image" class="control-label"></label>
+                        <input asp-for="KoiProfile.Image" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Image" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Create_At" class="control-label"></label>
+                        <input asp-for="KoiProfile.Create_At" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Create_At" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Update_At" class="control-label"></label>
+                        <input asp-for="KoiProfile.Update_At" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Update_At" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Rating_Average_Value" class="control-label"></label>
+                        <input asp-for="KoiProfile.Rating_Average_Value" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Rating_Average_Value" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KoiProfile.Status" class="control-label"></label>
+                        <input asp-for="KoiProfile.Status" class="form-control" />
+                        <span asp-validation-for="KoiProfile.Status" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Farm_Id" class="control-label"></label>
-                <select asp-for="KoiProfile.Farm_Id" class="form-control" asp-items="ViewBag.Farm_Id"></select>
-                <span asp-validation-for="KoiProfile.Farm_Id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Koi_Name" class="control-label"></label>
-                <input asp-for="KoiProfile.Koi_Name" class="form-control" />
-                <span asp-validation-for="KoiProfile.Koi_Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Quantity" class="control-label"></label>
-                <input asp-for="KoiProfile.Quantity" class="form-control" />
-                <span asp-validation-for="KoiProfile.Quantity" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Size" class="control-label"></label>
-                <input asp-for="KoiProfile.Size" class="form-control" />
-                <span asp-validation-for="KoiProfile.Size" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Price" class="control-label"></label>
-                <input asp-for="KoiProfile.Price" class="form-control" />
-                <span asp-validation-for="KoiProfile.Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Description" class="control-label"></label>
-                <input asp-for="KoiProfile.Description" class="form-control" />
-                <span asp-validation-for="KoiProfile.Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Image" class="control-label"></label>
-                <input asp-for="KoiProfile.Image" class="form-control" />
-                <span asp-validation-for="KoiProfile.Image" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Create_At" class="control-label"></label>
-                <input asp-for="KoiProfile.Create_At" class="form-control" />
-                <span asp-validation-for="KoiProfile.Create_At" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Update_At" class="control-label"></label>
-                <input asp-for="KoiProfile.Update_At" class="form-control" />
-                <span asp-validation-for="KoiProfile.Update_At" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Rating_Average_Value" class="control-label"></label>
-                <input asp-for="KoiProfile.Rating_Average_Value" class="form-control" />
-                <span asp-validation-for="KoiProfile.Rating_Average_Value" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="KoiProfile.Status" class="control-label"></label>
-                <input asp-for="KoiProfile.Status" class="form-control" />
-                <span asp-validation-for="KoiProfile.Status" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+
+            <div class="form-group mt-3">
                 <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-page="./Index" class="btn btn-secondary ml-2">Back to List</a>
             </div>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-page="./Index">Back to List</a>
-</div>
+<style>
+    footer {
+        display: none;
+    }
+</style>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

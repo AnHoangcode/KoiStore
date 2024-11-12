@@ -15,11 +15,12 @@ namespace RazorPages.Pages.AdminPage
     {
         private readonly IKoiProfileService _koiProfileService;
         private readonly IKoiFarmService _koiFarmService;
-
-        public IndexModel(IKoiProfileService koiProfileService, IKoiFarmService koiFarmService)
+        private readonly IKoiTypeService _koiTypeService;
+        public IndexModel(IKoiProfileService koiProfileService, IKoiFarmService koiFarmService, IKoiTypeService koiTypeService)
         {
             _koiProfileService = koiProfileService;
             _koiFarmService = koiFarmService;
+            _koiTypeService = koiTypeService;
         }
 
         public IList<KoiProfile> KoiProfile { get;set; } = default!;
@@ -41,11 +42,22 @@ namespace RazorPages.Pages.AdminPage
             {
                 if (koiProfile.Farm_Id.HasValue)
                 {
-                    koiProfile.Farm = _koiFarmService.GetKoiFarmById(koiProfile.Farm_Id.Value); 
+                    koiProfile.Farm = _koiFarmService.GetKoiFarmById(koiProfile.Farm_Id.Value);
                 }
                 else
                 {
-                    koiProfile.Farm = null; 
+                    koiProfile.Farm = null;
+                }
+            });
+            koiProfiles.ForEach(koiProfile =>
+            {
+                if (koiProfile.Type_Id.HasValue)
+                {
+                    koiProfile.Type = _koiTypeService.GetKoiTypeById(koiProfile.Type_Id.Value);
+                }
+                else
+                {
+                    koiProfile.Type = null;
                 }
             });
             KoiProfile = koiProfiles;

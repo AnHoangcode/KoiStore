@@ -8,16 +8,20 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BusinessObjects.Models;
 using DAOs;
+using Services.Interface;
 
 namespace RazorPages.Pages.AdminPage
 {
     public class EditModel : PageModel
     {
-        private readonly DAOs.KoiStoreDBContext _context;
-
-        public EditModel(DAOs.KoiStoreDBContext context)
+        private readonly IKoiProfileService _koiProfileService;
+        private readonly IKoiFarmService _koiFarmService;
+        private readonly IKoiTypeService _koiTypeService;
+        public EditModel(IKoiProfileService koiProfileService, IKoiFarmService koiFarmService, IKoiTypeService koiTypeService)
         {
-            _context = context;
+            _koiProfileService = koiProfileService;
+            _koiFarmService = koiFarmService;
+            _koiTypeService = koiTypeService;
         }
 
         [BindProperty]
@@ -25,19 +29,19 @@ namespace RazorPages.Pages.AdminPage
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.KoiProfiles == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var koiprofile =  await _context.KoiProfiles.FirstOrDefaultAsync(m => m.Koi_Id == id);
+            var koiprofile = _koiProfileService.GetKoiProfileById((int)id);
             if (koiprofile == null)
             {
                 return NotFound();
             }
             KoiProfile = koiprofile;
-           ViewData["Farm_Id"] = new SelectList(_context.KoiFarms, "Farm_Id", "Farm_Id");
-           ViewData["Type_Id"] = new SelectList(_context.KoiTypes, "Type_Id", "Type_Id");
+           ViewData["Farm_Id"] = new SelectList(_koiFarmService.GetAllKoiFarms(), "Farm_Id", "Farm_Name");
+           ViewData["Type_Id"] = new SelectList(_koiTypeService.GetAllKoiTypes(), "Type_Id", "Type_Name");
             return Page();
         }
 
@@ -45,16 +49,22 @@ namespace RazorPages.Pages.AdminPage
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
+            ModelState.Remove("KoiProfile.Farm");
+            ModelState.Remove("KoiProfile.Type");
             if (!ModelState.IsValid)
             {
+                ViewData["Farm_Id"] = new SelectList(_koiFarmService.GetAllKoiFarms(), "Farm_Id", "Farm_Name");
+                return Page();
+            }
+            if (!ModelState.IsValid)
+            {
+                ViewData["Type_Id"] = new SelectList(_koiTypeService.GetAllKoiTypes(), "Type_Id", "Type_Name");
                 return Page();
             }
 
-            _context.Attach(KoiProfile).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                _koiProfileService.UpdateKoiProfile(KoiProfile);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -73,7 +83,7 @@ namespace RazorPages.Pages.AdminPage
 
         private bool KoiProfileExists(int id)
         {
-          return (_context.KoiProfiles?.Any(e => e.Koi_Id == id)).GetValueOrDefault();
+          return _koiProfileService.GetKoiProfileById(id) != null;
         }
     }
 }
