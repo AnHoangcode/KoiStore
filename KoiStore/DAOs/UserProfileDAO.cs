@@ -28,10 +28,7 @@ namespace DAOs
             }
         }
 
-        public UserProfile GetUserProfileById(int id) {
-            int a = id;
-            return _context.UserProfiles.FirstOrDefault(x => x.User_Id == a);
-        }
+        public UserProfile GetUserProfileById(int id) => _context.UserProfiles.FirstOrDefault(x => x.User_Id == id);
 
         public bool UpdateUserProfile(UserProfile o)
         {
