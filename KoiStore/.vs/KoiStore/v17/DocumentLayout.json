@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6DD8ED03-063A-4C3A-B92F-A16462D415F5}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\businessobjects\\models\\koiprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DD8ED03-063A-4C3A-B92F-A16462D415F5}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\models\\koiprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DD8ED03-063A-4C3A-B92F-A16462D415F5}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\businessobjects\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DD8ED03-063A-4C3A-B92F-A16462D415F5}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DD8ED03-063A-4C3A-B92F-A16462D415F5}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\businessobjects\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DD8ED03-063A-4C3A-B92F-A16462D415F5}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|c:\\users\\minha\\onedrive\\desktop\\storage\\a temp\\koistore\\koistore\\razorpages\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{598677CA-E070-43FB-A05A-726BD04DA703}|RazorPages\\RazorPages.csproj|solutionrelative:razorpages\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 1351,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,6 +83,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KoiProfile.cs",
+              "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\Models\\KoiProfile.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\Models\\KoiProfile.cs",
+              "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\Models\\KoiProfile.cs",
+              "RelativeToolTip": "BusinessObjects\\Models\\KoiProfile.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T18:28:31.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\Models\\Rating.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\Models\\Rating.cs",
+              "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\Models\\Rating.cs",
+              "RelativeToolTip": "BusinessObjects\\Models\\Rating.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T18:24:41.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\Models\\Feedback.cs",
+              "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\Models\\Feedback.cs",
+              "RelativeToolTip": "BusinessObjects\\Models\\Feedback.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T18:24:36.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\appsettings.json",
+              "RelativeDocumentMoniker": "RazorPages\\appsettings.json",
+              "ToolTip": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\appsettings.json",
+              "RelativeToolTip": "RazorPages\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-12T18:04:02.86Z",
+              "EditorCaption": ""
             }
           ]
         },
