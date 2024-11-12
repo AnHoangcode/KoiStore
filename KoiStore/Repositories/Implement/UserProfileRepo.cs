@@ -17,8 +17,8 @@ namespace Repositories.Implement
 
         public List<UserProfile> GetAllUserProfiles() => UserProfileDAO.Instance.GetAllUserProfiles();
 
-        public UserProfile GetUserProfileById(int id) => UserProfileDAO.GetUserProfileById(id);
+        public UserProfile GetUserProfileById(int id) => UserProfileDAO.Instance.GetUserProfileById(id);
 
-        public bool UpdateUserProfile(UserProfile o) => UserProfileDAO.UpdateUserProfile(o);
+        public bool UpdateUserProfile(UserProfile o) => UserProfileDAO.Instance.UpdateUserProfile(o);
     }
 }

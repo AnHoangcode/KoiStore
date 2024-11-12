@@ -28,9 +28,12 @@ namespace DAOs
             }
         }
 
-        public static UserProfile GetUserProfileById(int id) => _context.UserProfiles.SingleOrDefault(x => x.Profile_Id == id);
+        public UserProfile GetUserProfileById(int id) {
+            int a = id;
+            return _context.UserProfiles.FirstOrDefault(x => x.User_Id == a);
+        }
 
-        public static bool UpdateUserProfile(UserProfile o)
+        public bool UpdateUserProfile(UserProfile o)
         {
             bool isSucess = false;
             try
