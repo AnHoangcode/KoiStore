@@ -192,14 +192,16 @@
             @foreach (var koi in Model.KoiProfiles)
             {
                 <div class="product-card">
-                    <img src="https://cakoibienhoa.com/public/userfiles/products/ca-koi-kohaku.jpg" alt="@koi.Koi_Name" />
+                    <a href="@Url.Page("/KoiPage/Details", new { id = koi.Koi_Id })">
+                        <img src="https://cakoibienhoa.com/public/userfiles/products/ca-koi-kohaku.jpg" alt="@koi.Koi_Name" />
+                    </a>
                     <div class="product-description">
                         <h3>@koi.Koi_Name</h3>
                         <p>Size: @koi.Size cm</p>
                         <p>Price: $@koi.Price</p>
                     </div>
                     <!-- Nút Buy ở cuối thẻ -->
-                    <a href="@Url.Action("Buy", "Product", new { id = koi.Koi_Id })" class="buy-button">Buy</a>
+                    <a href="@Url.Page("/KoiPage/Details", new { id = koi.Koi_Id })" class="buy-button">Buy</a>
                 </div>
             }
         </div>

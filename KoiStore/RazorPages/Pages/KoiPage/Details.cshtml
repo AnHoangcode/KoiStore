@@ -1,0 +1,127 @@
+﻿@page
+@model RazorPages.Pages.KoiPage.DetailsModel
+
+@{
+    ViewData["Title"] = "Chi tiết cá Koi";
+}
+
+<h1 class="product-title">@Model.KoiProfile.Koi_Name</h1>
+
+<div class="product-detail-container">
+    <div class="product-image">
+        <img src="https://cakoibienhoa.com/public/userfiles/products/ca-koi-kohaku.jpg" alt="@Model.KoiProfile.Koi_Name" />
+    </div>
+
+    <div class="product-info">
+        <h3>Information</h3>
+        <dl class="row">
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.KoiProfile.Quantity)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.KoiProfile.Quantity)
+            </dd>
+
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.KoiProfile.Size)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.KoiProfile.Size)
+            </dd>
+
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.KoiProfile.Price)
+            </dt>
+            <dd class="col-sm-8">
+                $@Html.DisplayFor(model => model.KoiProfile.Price)
+            </dd>
+
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.KoiProfile.Description)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.KoiProfile.Description)
+            </dd>
+
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.KoiProfile.Status)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.KoiProfile.Status)
+            </dd>
+        </dl>
+
+        <!-- Buttons for adding to cart and buying now -->
+        <div class="action-buttons">
+            <a href="@Url.Page("/KoiPage/BuyNow", new { id = Model.KoiProfile.Koi_Id })" class="btn btn-success">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Styles -->
+<style>
+    .product-title {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .product-detail-container {
+        display: flex;
+        gap: 40px;
+    }
+
+    .product-image img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .product-info {
+        flex: 1;
+    }
+
+        .product-info dl {
+            margin-bottom: 20px;
+        }
+
+        .product-info dt {
+            font-weight: bold;
+        }
+
+        .product-info dd {
+            margin-bottom: 10px;
+        }
+
+    .action-buttons {
+        margin-top: 20px;
+    }
+
+        .action-buttons a {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .action-buttons .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+            .action-buttons .btn-primary:hover {
+                background-color: #0056b3;
+            }
+
+        .action-buttons .btn-success {
+            background-color: #28a745;
+            color: white;
+        }
+
+            .action-buttons .btn-success:hover {
+                background-color: #218838;
+            }
+</style>

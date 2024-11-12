@@ -1,0 +1,177 @@
+﻿@page
+@model RazorPages.Pages.KoiPage.IndexModel
+
+@{
+    ViewData["Title"] = "Koi Collection";
+}
+
+<h1>Koi Collection</h1>
+
+<div class="page-content">
+    <!-- Filter Column -->
+    <aside class="filter-sidebar">
+        <h2>Filter by price</h2>
+        <form method="get">
+            <div>
+                <input type="checkbox" id="under100" name="priceFilters" value="under100"
+                @(Model.SelectedPriceFilters.Contains("under100") ? "checked" : "") />
+                <label for="under100">Under $100</label>
+            </div>
+            <div>
+                <input type="checkbox" id="100to200" name="priceFilters" value="100to200"
+                @(Model.SelectedPriceFilters.Contains("100to200") ? "checked" : "") />
+                <label for="100to200">$100 - $200</label>
+            </div>
+            <div>
+                <input type="checkbox" id="200to300" name="priceFilters" value="200to300"
+                @(Model.SelectedPriceFilters.Contains("200to300") ? "checked" : "") />
+                <label for="200to300">$200 - $300</label>
+            </div>
+            <div>
+                <input type="checkbox" id="over300" name="priceFilters" value="over300"
+                @(Model.SelectedPriceFilters.Contains("over300") ? "checked" : "") />
+                <label for="over300">Over $300</label>
+            </div>
+            <button type="submit" class="filter-button">Filter</button>
+        </form>
+    </aside>
+
+    <!-- Product List -->
+    <div class="featured-products">
+        @foreach (var koi in Model.KoiProfile)
+        {
+            <div class="product-card">
+                <!-- Clickable Image to go to product details -->
+                <a href="@Url.Page("/KoiPage/Details", new { id = koi.Koi_Id })">
+                    <img src="https://cakoibienhoa.com/public/userfiles/products/ca-koi-kohaku.jpg" alt="@koi.Koi_Name" />
+                </a>
+                <div class="product-description">
+                    <h3>@koi.Koi_Name</h3>
+                    <p>Size: @koi.Size cm</p>
+                    <p>Price: $@koi.Price</p>
+                </div>
+                <!-- Buy Button goes to product details page -->
+                <a href="@Url.Page("/KoiPage/Details", new { id = koi.Koi_Id })" class="buy-button">Buy</a>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Pagination Controls -->
+<div class="pagination-controls">
+    @if (Model.PageNumber > 1)
+    {
+        <a asp-page="./Index" asp-route-pageNumber="@(Model.PageNumber - 1)" asp-route-priceFilters="@string.Join(",", Model.SelectedPriceFilters)">Previous</a>
+    }
+    @if (Model.PageNumber < Model.TotalPages)
+    {
+        <a asp-page="./Index" asp-route-pageNumber="@(Model.PageNumber + 1)" asp-route-priceFilters="@string.Join(",", Model.SelectedPriceFilters)">Next</a>
+    }
+</div>
+
+
+<!-- Styles -->
+<style>
+    /* Layout for page content */
+    .page-content {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Filter sidebar */
+    .filter-sidebar {
+        width: 200px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f8f8f8;
+    }
+
+    /* Product grid */
+    .featured-products {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        max-height: 1000px; /* Chiều cao tối đa cho phép */
+        overflow-y: auto; /* Tạo thanh cuộn dọc */
+    }
+
+    /* Product card */
+    .product-card {
+        width: 250px;
+        height: 380px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        background-color: #ffffff;
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+        .product-card img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+        }
+
+    .product-description {
+        padding: 10px;
+        font-size: 14px;
+        color: #333;
+        height: 100px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+        font-size: 18px;
+        margin: 10px 0 5px;
+        color: #007bff;
+    }
+
+    .product-card p {
+        margin: 5px 0;
+    }
+
+    .product-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+    }
+
+    .buy-button {
+        margin-top: 10px;
+        padding: 10px 40px;
+        font-size: 16px;
+        color: white;
+        background-color: #28a745;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+    /* Pagination controls */
+    .pagination-controls {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+        .pagination-controls a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            .pagination-controls a:hover {
+                text-decoration: underline;
+            }
+</style>
