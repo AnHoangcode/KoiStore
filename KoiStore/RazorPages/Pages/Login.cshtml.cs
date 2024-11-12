@@ -23,6 +23,7 @@ namespace RazorPages.Pages
 			if (account != null && account.Password.Equals(pass))
 			{
 				int? roleId = account.Role_Id;
+				int? userId = account.User_Id;
 				if (roleId == 1 || roleId == 3)
 				{
 					HttpContext.Session.SetString("roleId", roleId.ToString());
@@ -31,6 +32,7 @@ namespace RazorPages.Pages
 				else if(roleId == 2)
 				{
                     HttpContext.Session.SetString("roleId", roleId.ToString());
+                    HttpContext.Session.SetString("userId", userId.ToString());
                     Response.Redirect("/UserPage/Home");
                 }
 				else

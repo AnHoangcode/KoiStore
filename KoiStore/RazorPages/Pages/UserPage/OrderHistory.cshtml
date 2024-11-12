@@ -1,0 +1,37 @@
+﻿@page
+@model RazorPages.Pages.UserPage.OrderHistoryModel
+
+@{
+    ViewData["Title"] = "Order History";
+}
+
+<h1>Your Order History</h1>
+
+@if (Model.Orders == null || !Model.Orders.Any())
+{
+    <p>You have no orders yet.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Order Date</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <td>@order.Order_Id</td>
+                    <td>@(order.Create_At.HasValue ? order.Create_At.Value.ToString("MM/dd/yyyy") : "N/A")</td>
+                    <td>@order.Total</td>
+                    <td>@order.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
