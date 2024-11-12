@@ -128,3 +128,7 @@
     </div>
 </body>
 </html>
+@if (!string.IsNullOrEmpty(Model.LoginMessage))
+{
+            <p style = "color: red;" > @Model.LoginMessage </p >
+}

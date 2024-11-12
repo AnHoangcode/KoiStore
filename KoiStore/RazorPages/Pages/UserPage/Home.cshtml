@@ -1,0 +1,212 @@
+﻿@page
+@model Home
+@using X.PagedList.Mvc.Core
+@using X.PagedList
+
+@{
+    ViewData["Home"] = "Home";
+    int roleId = int.Parse(HttpContext.Session.GetString("roleId"));
+    if (roleId != 2)
+    {
+        Response.Redirect("../Permission");
+    }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Home"]</title>
+    <style>
+        /* Tổng thể cho trang */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-y: auto;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Phần hình ảnh lớn trên đầu trang */
+        .hero-image {
+            background-image: url('/images/fachry-zella-devandra-9PhjFydFY5Q-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            width: 100%;
+            position: relative;
+        }
+
+            .hero-image:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.4); /* Overlay */
+            }
+
+        /* Tiêu đề chính */
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+            .content h2 {
+                color: #333;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+        /* Sản phẩm nổi bật */
+        .featured-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            width: 250px;
+            height: 380px; /* Tăng chiều cao để đủ chứa button */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background-color: #ffffff;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+            .product-card img {
+                width: 100%;
+                height: 60%;
+                object-fit: cover;
+            }
+
+        .product-description {
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+            height: 100px; /* Điều chỉnh lại chiều cao nếu cần */
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+            color: #007bff;
+        }
+
+        .product-card p {
+            margin: 5px 0;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        /* Nút Buy */
+        .buy-button {
+            margin-top: 10px;
+            padding: 10px 40px;
+            font-size: 16px;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+            .buy-button:hover {
+                background-color: #218838;
+                color: white;
+            }
+
+        /* Pagination styling đẹp hơn với trang hiện tại nổi bật */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 30px;
+        }
+
+            .pagination .PagedList-skipToNext,
+            .pagination .PagedList-skipToLast,
+            .pagination .PagedList-skipToPrevious,
+            .pagination .PagedList-skipToFirst,
+            .pagination .PagedList-page {
+                padding: 8px 14px;
+                background-color: #FF6347;
+                color: #333;
+                border: 1px solid #ddd;
+                border-radius: 50%; /* Bo tròn */
+                text-decoration: none;
+                font-size: 14px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+                /* Làm nổi bật trang hiện tại */
+                .pagination .PagedList-page.active {
+                    background-color: #007bff;
+                    color: #fff;
+                    font-weight: bold;
+                    border-color: #007bff;
+                }
+
+                /* Hiệu ứng khi di chuột */
+                .pagination .PagedList-page:hover,
+                .pagination .PagedList-skipToNext:hover,
+                .pagination .PagedList-skipToLast:hover,
+                .pagination .PagedList-skipToPrevious:hover,
+                .pagination .PagedList-skipToFirst:hover {
+                    background-color: #fa2600;
+                    color: #fff;
+                    border-color: #fa2600;
+                }
+
+    </style>
+</head>
+<body>
+    <div class="hero-image"></div>
+
+    <div class="content">
+        <div class="title" style="display: flex; justify-content: space-between; align-items: center; gap: 30px;">
+            <h2 style="margin: 0; font-size: 24px; color: #333;">Featured Koi Fish</h2>
+            <form method="get" class="search-form" style="width: 200px; display: flex; align-items: center; gap: 10px; position: relative;">
+                <input type="text" name="searchTerm" value="@Model.SearchTerm" placeholder="Tìm kiếm sản phẩm" style="padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; width: 100%;" />
+                <button type="submit" class="btn btn-secondary" style="background-color: transparent; border: none; cursor: pointer; position: absolute; right: 0; top: 50%; transform: translateY(-50%);">
+                    <i class="fas fa-search" style="color: #FF6347; font-size: 18px;"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="featured-products">
+            @foreach (var koi in Model.KoiProfiles)
+            {
+                <div class="product-card">
+                    <img src="https://cakoibienhoa.com/public/userfiles/products/ca-koi-kohaku.jpg" alt="@koi.Koi_Name" />
+                    <div class="product-description">
+                        <h3>@koi.Koi_Name</h3>
+                        <p>Size: @koi.Size cm</p>
+                        <p>Price: $@koi.Price</p>
+                    </div>
+                    <!-- Nút Buy ở cuối thẻ -->
+                    <a href="@Url.Action("Buy", "Product", new { id = koi.Koi_Id })" class="buy-button">Buy</a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="pagination">
+        @Html.PagedListPager(Model.KoiProfiles, page => Url.Page("Home", new { pageNumber = page, searchTerm = Model.SearchTerm }), PagedListRenderOptions.Classic)
+    </div>
+</body>
+</html>

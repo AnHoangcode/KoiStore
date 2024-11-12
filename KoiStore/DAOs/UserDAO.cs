@@ -53,7 +53,12 @@ namespace DAOs
 
         public User GetUserById(int id) => _context.Users.SingleOrDefault(x => x.User_Id == id);
 
-        public User GetUserByUsername(string username) => _context.Users.SingleOrDefault(y => y.Username == username);
+        //public User GetUserByUsername(string username) => _context.Users.SingleOrDefault(y => y.Username == username);
+
+        public User GetUserByUsername(string username)
+        {
+            return _context.Users.SingleOrDefault(u => u.Username.Equals(username));
+        }
 
         public bool CreateUser(User o)
         {

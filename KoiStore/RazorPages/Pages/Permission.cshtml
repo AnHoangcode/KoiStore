@@ -1,0 +1,77 @@
+﻿@page
+@model RazorPages.Pages.PermissionModel
+@{
+    ViewData["Title"] = "Permission Denied";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* Tổng thể cho trang */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Đảm bảo chiều cao trang luôn đủ */
+        }
+
+        /* Phần hộp thông báo */
+        .permission-container {
+            text-align: center;
+            padding: 40px;
+            max-width: 500px;
+            margin: 20px auto; /* Giới hạn chiều rộng và căn giữa */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .permission-container h1 {
+                font-size: 28px;
+                color: #d9534f; /* Màu đỏ cho tiêu đề */
+                margin-bottom: 10px;
+            }
+
+            .permission-container p {
+                font-size: 18px;
+                margin-bottom: 20px;
+                color: #555;
+            }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #FF6347;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+            .back-button:hover {
+                background-color: #fa2600;
+                color: #fff;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="permission-container">
+        <h1>Permission Denied</h1>
+        <p>You do not have permission to access this page.</p>
+        <a class="back-button" asp-area="" asp-page="/UserPage/Home">Back to Home</a>
+    </div>
+</body>
+</html>

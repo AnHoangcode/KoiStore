@@ -1,4 +1,5 @@
 ﻿using BusinessObjects.Models;
+using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
 using System;
@@ -11,7 +12,14 @@ namespace Services.Implement
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepo? _userRepo;
+        private readonly IUserRepo? _userRepo = null;
+        public UserService()
+        {
+            if (_userRepo == null)
+            {
+                _userRepo = new UserRepo();
+            }
+        }
         public bool CreateUser(User user)
         {
             return _userRepo.CreateUser(user);

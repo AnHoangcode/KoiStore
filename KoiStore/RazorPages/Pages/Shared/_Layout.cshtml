@@ -7,10 +7,35 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RazorPages.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
+        /* Đặt lề và chiều cao tổng thể cho body */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tăng khoảng cách giữa các phần */
+        .container {
+            margin: 0 auto;
+            padding: 15px;
+            max-width: 1200px;
+        }
+
+        /* Navbar với màu sắc và kiểu chữ rõ ràng */
         .navbar {
             background-color: #FF6347;
+            padding-top: 5px; /* Giảm padding trên */
+            padding-bottom: 5px; /* Giảm padding dưới */
         }
+
+            .navbar .navbar-brand, .navbar .nav-link {
+                padding: 0 10px; /* Giảm padding xung quanh */
+                font-weight: 500;
+                font-size: 1rem; /* Có thể giảm kích thước chữ nếu muốn */
+            }
 
             .navbar .nav-link, .navbar .navbar-brand {
                 color: #FFFFFF;
@@ -20,19 +45,28 @@
                     color: #FFDAB9;
                 }
 
+        /* Main content căn giữa và có padding đẹp hơn */
+        main {
+            flex-grow: 1; /* Chiếm toàn bộ không gian trống */
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        /* Footer phong cách đơn giản với text căn giữa */
         footer {
             background-color: #333333;
             color: #FFFFFF;
-            padding: 1px 0;
+            padding: 10px 0;
             font-size: 14px;
             text-align: center;
+            width: 100%;
+            height: 100%;
             position: relative;
             bottom: 0;
-            width: 100%;
         }
 
             footer p {
-                margin: 1px 0;
+                margin: 5px 0;
             }
 
             footer a {
@@ -45,33 +79,54 @@
                     text-decoration: underline;
                 }
 
+        /* Đặt chiều cao cho trang và sử dụng Flexbox */
         body {
             display: flex;
             flex-direction: column;
-            height: 100vh;
+            height: 100vh; /* Chiều cao của trang chiếm 100% */
         }
 
-        main {
-            flex: 1;
+        .navbar, main, footer {
+            display: flex;
+            flex-direction: column;
         }
+
+        /* Style cho menu dropdown */
+        .dropdown-menu {
+            background-color: #FF6347;
+        }
+
+        .dropdown-item {
+            color: white;
+        }
+
+            .dropdown-item:hover {
+                background-color: #FFDAB9;
+            }
     </style>
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-light">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Home</a>
+                <a class="navbar-brand" asp-area="" asp-page="/UserPage/Home">Home</a>
+                <a class="navbar-brand" asp-area="" asp-page="/UserPage/AboutUs">About Us</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/About us">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/Login">Login</a>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                    <ul class="navbar-nav">
+                        <!-- Icon Profile với dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-circle fa-1x" style="font-size: 25px;"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-page="/UserPage/AboutUs">Profile</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Login">Log Out</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -85,10 +140,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            <p>Hotline: 0123456789</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 - Your Company. All rights reserved.</p>
+        <p><a href="https://www.example.com">Privacy Policy</a> | <a href="https://www.example.com">Terms of Service</a></p>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
