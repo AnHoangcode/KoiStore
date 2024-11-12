@@ -18,8 +18,6 @@ namespace RazorPages.Pages.UserPage
 
         [BindProperty]
         public UserProfile UserProfile { get; set; }
-        public int UserId { get; private set; }
-
         public async Task<IActionResult> OnGetAsync()
         {
 
@@ -27,6 +25,8 @@ namespace RazorPages.Pages.UserPage
             int UserId = int.Parse(HttpContext.Session.GetString("userId"));
 
             UserProfile = _userProfileService.GetUserProfileById(UserId);
+
+            HttpContext.Session.SetString("userProfileId", UserProfile.Profile_Id.ToString());
 
             if (UserProfile == null)
             {
@@ -42,9 +42,20 @@ namespace RazorPages.Pages.UserPage
                 return Page();
             }
 
-            _userProfileService.UpdateUserProfile(UserProfile);
-            
-            return RedirectToPage("/UserPage/UserProfile", new { id = UserProfile.Profile_Id });
+            try
+            {
+                int UserId = int.Parse(HttpContext.Session.GetString("userId"));
+                int UserProfileId = int.Parse(HttpContext.Session.GetString("userProfileId"));
+                UserProfile.Profile_Id = UserProfileId;
+                UserProfile.User_Id = UserId;
+                _userProfileService.UpdateUserProfile(UserProfile);
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                throw;
+            }
+
+            return Page();
         }
     }
 }
