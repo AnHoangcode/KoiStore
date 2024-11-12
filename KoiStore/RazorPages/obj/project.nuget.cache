@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dADjvBI5e7nVmiqh7hLbZjrQ5cK9IhPDMYaGjKndHwKWKBn/y22TqzWu5imEHLVFhMIZjQLeRDAq9BZksD8rbg==",
+  "dgSpecHash": "DENtss4540bM8f6rKReyCHdaE0CotOeCIYpOZxL8N9hZ60WXvQHAdkXd3MOTHVki0udZrEpzQJE8m54lDJzmgg==",
   "success": true,
   "projectFilePath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj",
   "expectedPackageFiles": [
@@ -228,8 +228,8 @@
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Quoc.Bao\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Quoc.Bao\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
     "C:\\Users\\Quoc.Bao\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
   ],

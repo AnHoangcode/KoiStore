@@ -7,34 +7,42 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using BusinessObjects.Models;
 using DAOs;
+using Services.Interface;
 
 namespace RazorPages.Pages.AdminPage
 {
     public class DetailsModel : PageModel
     {
-        private readonly DAOs.KoiStoreDBContext _context;
-
-        public DetailsModel(DAOs.KoiStoreDBContext context)
+        private readonly IKoiProfileService _koiProfileService;
+        private readonly IKoiFarmService _koiFarmService;
+        private readonly IKoiTypeService _koiTypeService;
+        public DetailsModel(IKoiProfileService koiProfileService, IKoiFarmService koiFarmService, IKoiTypeService koiTypeService)
         {
-            _context = context;
+            _koiProfileService = koiProfileService;
+            _koiFarmService = koiFarmService;
+            _koiTypeService = koiTypeService;
         }
 
-      public KoiProfile KoiProfile { get; set; } = default!; 
+        [BindProperty]
+
+        public KoiProfile KoiProfile { get; set; } = default!; 
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.KoiProfiles == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var koiprofile = await _context.KoiProfiles.FirstOrDefaultAsync(m => m.Koi_Id == id);
+            var koiprofile = _koiProfileService.GetKoiProfileById((int)id);
             if (koiprofile == null)
             {
                 return NotFound();
             }
             else 
             {
+                koiprofile.Farm = _koiFarmService.GetKoiFarmById((int)koiprofile.Farm_Id);
+                koiprofile.Type = _koiTypeService.GetKoiTypeById((int)koiprofile.Type_Id);
                 KoiProfile = koiprofile;
             }
             return Page();

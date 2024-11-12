@@ -280,9 +280,9 @@ D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\staticwebas
 D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\scopedcss\bundle\RazorPages.styles.css
 D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\scopedcss\projectbundle\RazorPages.bundle.scp.css
+D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\RazorPages.csproj.Up2Date
 D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\RazorPages.dll
 D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\refint\RazorPages.dll
 D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\RazorPages.pdb
 D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\RazorPages.genruntimeconfig.cache
 D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\ref\RazorPages.dll
-D:\SEM7\PRN221\Project\KoiStore\KoiStore\RazorPages\obj\Debug\net6.0\RazorPages.csproj.Up2Date

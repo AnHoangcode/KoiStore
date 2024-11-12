@@ -7,36 +7,42 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using BusinessObjects.Models;
 using DAOs;
+using Services.Interface;
 
 namespace RazorPages.Pages.AdminPage
 {
     public class DeleteModel : PageModel
     {
-        private readonly DAOs.KoiStoreDBContext _context;
-
-        public DeleteModel(DAOs.KoiStoreDBContext context)
+        private readonly IKoiProfileService _koiProfileService;
+        private readonly IKoiFarmService _koiFarmService;
+        private readonly IKoiTypeService _koiTypeService;
+        public DeleteModel(IKoiProfileService koiProfileService, IKoiFarmService koiFarmService, IKoiTypeService koiTypeService)
         {
-            _context = context;
+            _koiProfileService = koiProfileService;
+            _koiFarmService = koiFarmService;
+            _koiTypeService = koiTypeService;
         }
 
         [BindProperty]
-      public KoiProfile KoiProfile { get; set; } = default!;
+        public KoiProfile KoiProfile { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.KoiProfiles == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var koiprofile = await _context.KoiProfiles.FirstOrDefaultAsync(m => m.Koi_Id == id);
+            var koiprofile = _koiProfileService.GetKoiProfileById((int)id);
 
             if (koiprofile == null)
             {
                 return NotFound();
             }
-            else 
+            else
             {
+                koiprofile.Farm = _koiFarmService.GetKoiFarmById((int)koiprofile.Farm_Id);
+                koiprofile.Type = _koiTypeService.GetKoiTypeById((int)koiprofile.Type_Id);
                 KoiProfile = koiprofile;
             }
             return Page();
@@ -44,17 +50,16 @@ namespace RazorPages.Pages.AdminPage
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.KoiProfiles == null)
+            if (id == null)
             {
                 return NotFound();
             }
-            var koiprofile = await _context.KoiProfiles.FindAsync(id);
+            var koiprofile = _koiProfileService.GetKoiProfileById((int)id);
 
             if (koiprofile != null)
             {
                 KoiProfile = koiprofile;
-                _context.KoiProfiles.Remove(KoiProfile);
-                await _context.SaveChangesAsync();
+                _koiProfileService.DeleteKoiProfile(KoiProfile.Koi_Id);
             }
 
             return RedirectToPage("./Index");

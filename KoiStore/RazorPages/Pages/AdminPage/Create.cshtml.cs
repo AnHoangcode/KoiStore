@@ -7,22 +7,26 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using BusinessObjects.Models;
 using DAOs;
+using Services.Interface;
 
 namespace RazorPages.Pages.AdminPage
 {
     public class CreateModel : PageModel
     {
-        private readonly DAOs.KoiStoreDBContext _context;
-
-        public CreateModel(DAOs.KoiStoreDBContext context)
+        private readonly IKoiProfileService _koiProfileService;
+        private readonly IKoiFarmService _koiFarmService;
+        private readonly IKoiTypeService _koiTypeService;
+        public CreateModel(IKoiProfileService koiProfileService, IKoiFarmService koiFarmService, IKoiTypeService koiTypeService)
         {
-            _context = context;
+            _koiProfileService = koiProfileService;
+            _koiFarmService = koiFarmService;
+            _koiTypeService = koiTypeService;
         }
 
         public IActionResult OnGet()
         {
-        ViewData["Farm_Id"] = new SelectList(_context.KoiFarms, "Farm_Id", "Farm_Id");
-        ViewData["Type_Id"] = new SelectList(_context.KoiTypes, "Type_Id", "Type_Id");
+            ViewData["Farm_Id"] = new SelectList(_koiFarmService.GetAllKoiFarms(), "Farm_Id", "Farm_Name");
+            ViewData["Type_Id"] = new SelectList(_koiTypeService.GetAllKoiTypes(), "Type_Id", "Type_Name");
             return Page();
         }
 
@@ -30,17 +34,21 @@ namespace RazorPages.Pages.AdminPage
         public KoiProfile KoiProfile { get; set; } = default!;
         
 
-        // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.KoiProfiles == null || KoiProfile == null)
+            ModelState.Remove("KoiProfile.Farm");
+            ModelState.Remove("KoiProfile.Type");
+            if (!ModelState.IsValid)
             {
+                ViewData["Farm_Id"] = new SelectList(_koiFarmService.GetAllKoiFarms(), "Farm_Id", "Farm_Name");
                 return Page();
             }
-
-            _context.KoiProfiles.Add(KoiProfile);
-            await _context.SaveChangesAsync();
-
+            if (!ModelState.IsValid)
+            {
+                ViewData["Type_Id"] = new SelectList(_koiTypeService.GetAllKoiTypes(), "Type_Id", "Type_Name");
+                return Page();
+            }
+            _koiProfileService.CreateKoiProfile(KoiProfile);
             return RedirectToPage("./Index");
         }
     }
