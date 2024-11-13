@@ -15,22 +15,22 @@
             <div>
                 <input type="checkbox" id="under100" name="priceFilters" value="under100"
                 @(Model.SelectedPriceFilters.Contains("under100") ? "checked" : "") />
-                <label for="under100">Under $100</label>
+                <label for="under100">Under 100 vnd</label>
             </div>
             <div>
                 <input type="checkbox" id="100to200" name="priceFilters" value="100to200"
                 @(Model.SelectedPriceFilters.Contains("100to200") ? "checked" : "") />
-                <label for="100to200">$100 - $200</label>
+                <label for="100to200">100 vnd - 200 vnd</label>
             </div>
             <div>
                 <input type="checkbox" id="200to300" name="priceFilters" value="200to300"
                 @(Model.SelectedPriceFilters.Contains("200to300") ? "checked" : "") />
-                <label for="200to300">$200 - $300</label>
+                <label for="200to300">200 vnd - 300 vnd</label>
             </div>
             <div>
                 <input type="checkbox" id="over300" name="priceFilters" value="over300"
                 @(Model.SelectedPriceFilters.Contains("over300") ? "checked" : "") />
-                <label for="over300">Over $300</label>
+                <label for="over300">Over 300 vnd</label>
             </div>
             <button type="submit" class="filter-button">Filter</button>
         </form>
@@ -48,7 +48,7 @@
                 <div class="product-description">
                     <h3>@koi.Koi_Name</h3>
                     <p>Size: @koi.Size cm</p>
-                    <p>Price: $@koi.Price</p>
+                    <p>Price: @koi.Price vnd</p>
                 </div>
                 <!-- Buy Button goes to product details page -->
                 <a href="@Url.Page("/KoiPage/Details", new { id = koi.Koi_Id })" class="buy-button">Buy</a>
