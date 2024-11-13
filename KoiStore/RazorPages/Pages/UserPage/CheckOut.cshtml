@@ -2,6 +2,7 @@
 @model RazorPages.Pages.UserPage.CheckOutModel
 @{
     ViewData["Title"] = "Checkout";
+
 }
 
 <h2 class="text-center mb-4">Checkout</h2>
@@ -30,7 +31,7 @@
             <tbody>
                 <tr>
                     <td>@Model.OrderItems.Koi_Name</td>
-                    <td>@Model.OrderItems.Quantity</td>
+                    <td>@Model.Quantity</td>
                     <td>@Model.OrderItems.UnitPrice</td>
                     <td>@(Model.OrderItems.Quantity * Model.OrderItems.UnitPrice)</td>
                 </tr>

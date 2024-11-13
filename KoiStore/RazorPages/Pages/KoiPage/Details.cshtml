@@ -3,6 +3,11 @@
 
 @{
     ViewData["Title"] = "Chi tiết cá Koi";
+    int roleId = int.Parse(HttpContext.Session.GetString("roleId"));
+    if (roleId != 2)
+    {
+        Response.Redirect("../Permission");
+    }
 }
 
 <h1 class="product-title">@Model.KoiProfile.Koi_Name</h1>
@@ -51,14 +56,24 @@
             </dd>
         </dl>
 
-        <!-- Buttons for adding to cart and buying now -->
         <div class="action-buttons">
-            <a href="@Url.Page("/KoiPage/Details", new { id = Model.KoiProfile.Koi_Id, handler = "BuyNow" })" class="btn btn-success">Buy Now</a>
-        </div>
+            <form method="post" asp-route-id="@Model.KoiProfile.Koi_Id">
+                <div class="quantity-container">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="@Model.KoiProfile.Quantity" required />
+                </div>
+                <button style="margin-top:10px" type="submit" class="btn btn-success">Buy Now</button>
+            </form>
 
+
+            @if (Model.ErrorMessage != null)
+            {
+                <div class="alert alert-danger mt-2">@Model.ErrorMessage</div>
+            }
+        </div>
     </div>
 </div>
- 
+
 <!-- Styles -->
 <style>
     .product-title {
@@ -93,6 +108,24 @@
 
         .product-info dd {
             margin-bottom: 10px;
+        }
+
+    .quantity-input {
+        margin-bottom: 20px;
+    }
+
+        .quantity-input label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .quantity-input input {
+            width: 60px;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
         }
 
     .action-buttons {

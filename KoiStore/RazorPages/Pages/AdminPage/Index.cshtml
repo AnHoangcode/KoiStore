@@ -3,6 +3,11 @@
 
 @{
     ViewData["Title"] = "Index";
+    int roleId = int.Parse(HttpContext.Session.GetString("roleId"));
+    if (roleId != 1)
+    {
+        Response.Redirect("../Permission");
+    }
 }
 
 <h1>Index</h1>

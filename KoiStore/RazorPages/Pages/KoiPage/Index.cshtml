@@ -3,6 +3,11 @@
 
 @{
     ViewData["Title"] = "Koi Collection";
+    int roleId = int.Parse(HttpContext.Session.GetString("roleId"));
+    if (roleId != 2)
+    {
+        Response.Redirect("../Permission");
+    }
 }
 
 <h1>Koi Collection</h1>

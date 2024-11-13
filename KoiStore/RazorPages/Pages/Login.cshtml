@@ -1,7 +1,7 @@
 ﻿@page
 @model RazorPages.Pages.LoginModel
 @{
-    Layout = null; 
+    Layout = null;
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,6 @@
             margin: 0;
         }
 
-
         .login-form {
             background: #ffffff;
             padding: 30px;
@@ -37,9 +36,8 @@
             max-width: 400px;
             text-align: center;
             border-top: 5px solid #FF6347;
-            margin: auto; 
+            margin: auto;
         }
-
 
         h1 {
             font-size: 24px;
@@ -71,33 +69,42 @@
         .form-actions {
             margin-top: 20px;
             display: flex;
+            gap: 10px;
             justify-content: space-between;
         }
 
-        .btn-primary {
-            background-color: #FF6347;
-            color: white;
+        .btn-primary,
+        .btn-secondary,
+        .btn-danger {
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .btn-primary {
+            background-color: #FF6347;
         }
 
             .btn-primary:hover {
                 background-color: #E5533D;
             }
 
+        .btn-secondary {
+            background-color: #1E90FF;
+        }
+
+            .btn-secondary:hover {
+                background-color: #1C86EE;
+            }
+
         .btn-danger {
             background-color: #808080;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
         }
 
             .btn-danger:hover {
@@ -123,13 +130,14 @@
             </div>
             <div class="form-actions">
                 <input type="submit" class="btn-primary" name="btnLogin" value="Login" />
+                <button type="button" class="btn-secondary">Register</button>
                 <input type="reset" class="btn-danger" name="btnReset" value="Reset" />
             </div>
         </form>
     </div>
+    @if (!string.IsNullOrEmpty(Model.LoginMessage))
+    {
+        <p style="color: red; text-align: center;">@Model.LoginMessage</p>
+    }
 </body>
 </html>
-@if (!string.IsNullOrEmpty(Model.LoginMessage))
-{
-            <p style = "color: red;" > @Model.LoginMessage </p >
-}

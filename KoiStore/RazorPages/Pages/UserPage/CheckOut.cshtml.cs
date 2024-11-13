@@ -29,13 +29,17 @@ namespace RazorPages.Pages.UserPage
         [BindProperty]
         public string DeliveryAddress { get; set; }
 
+        public int Quantity { get; set; }
+
         public double TotalAmount { get; set; }
 
         public async Task OnGetAsync()
         {
             int KoiId = (int)HttpContext.Session.GetInt32("KoiId");
 
-            OrderItems = new OrderItem { Koi_Name = _koiProfileService.GetKoiProfileById(KoiId).Koi_Name, Quantity = 2, UnitPrice = (double)_koiProfileService.GetKoiProfileById(KoiId).Price };
+            int quantity = (int)HttpContext.Session.GetInt32("KoiQuantity");
+
+            OrderItems = new OrderItem { Koi_Name = _koiProfileService.GetKoiProfileById(KoiId).Koi_Name, Quantity = quantity, UnitPrice = (double)_koiProfileService.GetKoiProfileById(KoiId).Price };
 
             int UserId = int.Parse(HttpContext.Session.GetString("userId"));
 
@@ -62,6 +66,8 @@ namespace RazorPages.Pages.UserPage
                 TotalAmount = 0; 
             }
 
+            Quantity = (int)HttpContext.Session.GetInt32("KoiQuantity");
+
             var order = new Order
             {
                 User_Id = _userProfileService.GetUserProfileById(UserId).User_Id, 
@@ -78,7 +84,7 @@ namespace RazorPages.Pages.UserPage
                 Order_Id = order.Order_Id,
                 User_Id = order.User_Id,
                 Koi_Id = _koiProfileService.GetKoiProfileById(KoiId).Koi_Id,
-                Quantity = 2,
+                Quantity = Quantity,
                 Total = TotalAmount,
                 Order_Detail_Type = null,
                 Create_At = DateTime.Now,
