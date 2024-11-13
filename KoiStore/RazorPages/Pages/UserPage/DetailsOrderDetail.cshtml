@@ -1,0 +1,105 @@
+﻿@page
+@model RazorPages.Pages.UserPage.DetailsOrderDetailModel
+
+@{
+    ViewData["Title"] = "DetailsOrderDetail";
+}
+
+<h1>Information about Order @Model.Order_Id</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetail[0].Koi.Koi_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetail[0].Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetail[0].Order_Detail_Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetail[0].Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetail[0].Create_At)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetail[0].Update_At)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetail[0].Start_At)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetail[0].End_At)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetail[0].Status)
+            </th>
+            @*             <th>
+            @Html.DisplayNameFor(model => model.OrderDetail[0].Koi)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.OrderDetail[0].Order)
+            </th>
+            <th>
+            @Html.DisplayNameFor(model => model.OrderDetail[0].User)
+            </th> *@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderDetail)
+        {
+            <tr>
+                <td> 
+                    @Html.DisplayFor(modelItem => item.Koi.Koi_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Order_Detail_Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Total)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Create_At)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Update_At)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Start_At)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.End_At)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                @*             <td>
+            @Html.DisplayFor(modelItem => item.Koi.Koi_Id)
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.Order.Order_Id)
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.User.User_Id)
+            </td> *@
+                <td>
+                    @if (Model.HasRating[item.Order_Detail_Id]) // Check if rating exists 
+                    {
+                        <a asp-page="./ViewRating" asp-route-id="@item.Order_Detail_Id" asp-route-orderId="@item.Order_Id">View Rating</a>
+                    } 
+                    else 
+                    { 
+                        <a asp-page="./CreateRating" asp-route-id="@item.Order_Detail_Id" asp-route-orderId="@item.Order_Id">Rate</a> 
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

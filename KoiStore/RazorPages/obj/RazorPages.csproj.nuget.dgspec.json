@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj": {}
+    "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj": {}
   },
   "projects": {
-    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj": {
+    "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj",
-        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
-        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\obj\\",
+        "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj",
+        "packagesPath": "C:\\Users\\minha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\minha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -76,40 +81,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj": {
+    "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj",
+        "projectUniqueName": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj",
         "projectName": "DAOs",
-        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj",
-        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
-        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\obj\\",
+        "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj",
+        "packagesPath": "C:\\Users\\minha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\minha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -123,8 +114,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj": {
-                "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj"
+              "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\BusinessObjects\\BusinessObjects.csproj"
               }
             }
           }
@@ -133,6 +124,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -149,40 +145,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj": {
+    "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj",
+        "projectUniqueName": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj",
         "projectName": "RazorPages",
-        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj",
-        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
-        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\RazorPages\\obj\\",
+        "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\RazorPages.csproj",
+        "packagesPath": "C:\\Users\\minha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\RazorPages\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\minha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -196,8 +178,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj": {
-                "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj"
+              "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Services.csproj"
               }
             }
           }
@@ -206,6 +188,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -246,24 +233,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -272,21 +241,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj": {
+    "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
-        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\obj\\",
+        "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\minha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\minha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -300,8 +269,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj": {
-                "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj"
+              "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj": {
+                "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\DAOs\\DAOs.csproj"
               }
             }
           }
@@ -310,6 +279,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -326,40 +300,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj": {
+    "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\Quoc.Bao\\.nuget\\packages\\",
-        "outputPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Services\\obj\\",
+        "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\minha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Quoc.Bao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\minha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -373,8 +333,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj": {
-                "projectPath": "D:\\SEM7\\PRN221\\Project\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj"
+              "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\Users\\minha\\OneDrive\\Desktop\\Storage\\A Temp\\KoiStore\\KoiStore\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -383,6 +343,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -399,26 +364,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

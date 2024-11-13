@@ -10,7 +10,7 @@ using Services.Interface;
 
 namespace Services.Implement
 {
-	public class OrderDetailService : IOrderDetailService
+    public class OrderDetailService : IOrderDetailService
 	{
 
         private IOrderDetailRepo _repo = null;
@@ -45,5 +45,10 @@ namespace Services.Implement
         {
             return _repo.CreateOrderDetail(o);
         }
-	}
+
+        public List<OrderDetail> GetOrderDetailByOrderId(int? id)
+        {
+            return _repo.GetOrderDetailByOrderId(id);
+        }
+    }
 }

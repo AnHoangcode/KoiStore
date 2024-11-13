@@ -23,6 +23,7 @@ builder.Services.AddScoped<IUserProfileRepo, UserProfileRepo>();
 
 
 
+
 builder.Services.AddSession();
 var app = builder.Build();
 

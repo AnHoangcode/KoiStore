@@ -19,6 +19,11 @@ namespace Repositories.Implement
 
         public Rating GetRatingById(int id) => RatingDAO.Instance.GetRatingById(id);
 
+        public Rating GetRatingbyOrderDetail(int order_Detail_Id)
+        {
+            return RatingDAO.Instance.GetRatingbyOrderDetail(order_Detail_Id);
+        }
+
         public bool UpdateRating(Rating o) => RatingDAO.Instance.UpdateRating(o);
     }
 }

@@ -12,7 +12,7 @@ namespace Services.Implement
 {
     public class RatingService : IRatingService
     {
-        private readonly IRatingRepo? _repo = null;
+        private readonly IRatingRepo _repo = null;
 
         public RatingService()
         {
@@ -28,6 +28,11 @@ namespace Services.Implement
         public List<Rating> GetAllRatings() => _repo.GetAllRatings();
 
         public Rating GetRatingById(int id) => _repo.GetRatingById(id);
+
+        public Rating GetRatingbyOrderDetail(int order_Detail_Id)
+        {
+            return _repo.GetRatingbyOrderDetail(order_Detail_Id);
+        }
 
         public bool UpdateRating(Rating o) => _repo.UpdateRating(o);
     }

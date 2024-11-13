@@ -14,5 +14,6 @@ namespace Services.Interface
         bool UpdateRating(Rating o);
         bool DeleteRating(int id);
         bool CreateRating(Rating o);
+        Rating GetRatingbyOrderDetail(int order_Detail_Id);
     }
 }

@@ -26,7 +26,9 @@ else
             @foreach (var order in Model.Orders)
             {
                 <tr>
-                    <td>@order.Order_Id</td>
+                    <td> 
+                        <a asp-page="./DetailsOrderDetail" asp-route-id="@order.Order_Id">@order.Order_Id</a>
+                    </td>
                     <td>@(order.Create_At.HasValue ? order.Create_At.Value.ToString("MM/dd/yyyy") : "N/A")</td>
                     <td>@order.Total</td>
                     <td>@order.Status</td>
