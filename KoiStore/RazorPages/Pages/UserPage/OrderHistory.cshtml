@@ -16,7 +16,7 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th>Order ID</th>
+                <th>Delivery Address</th>
                 <th>Order Date</th>
                 <th>Total Amount</th>
                 <th>Status</th>
@@ -26,14 +26,45 @@ else
             @foreach (var order in Model.Orders)
             {
                 <tr>
-                    <td> 
-                        <a asp-page="./DetailsOrderDetail" asp-route-id="@order.Order_Id">@order.Order_Id</a>
-                    </td>
+                    <td>@order.Delivery_Address</td>
                     <td>@(order.Create_At.HasValue ? order.Create_At.Value.ToString("MM/dd/yyyy") : "N/A")</td>
                     <td>@order.Total</td>
-                    <td>@order.Status</td>
+                    <td>
+                        <span class="status-badge
+                            @(order.Status == "Pending" ? "badge-pending" :
+                               order.Status == "Completed" ? "badge-completed" :
+                               order.Status == "Cancelled" ? "badge-cancelled" : "badge-default")">
+                            @order.Status
+                        </span>
+                    </td>
                 </tr>
             }
         </tbody>
     </table>
+
+    <!-- Thêm CSS vào cuối phần body -->
+    <style>
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .badge-pending {
+            background-color: orange;
+        }
+
+        .badge-completed {
+            background-color: green;
+        }
+
+        .badge-cancelled {
+            background-color: red;
+        }
+
+        .badge-default {
+            background-color: gray;
+        }
+    </style>
 }

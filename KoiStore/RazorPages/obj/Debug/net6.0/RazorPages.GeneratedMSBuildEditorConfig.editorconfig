@@ -9,99 +9,91 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RazorPages
 build_property.RootNamespace = RazorPages
-build_property.ProjectDir = C:\Users\minha\OneDrive\Desktop\Storage\A Temp\KoiStore\KoiStore\RazorPages\
+build_property.ProjectDir = C:\Users\Admin\Desktop\FPT\CN7\PRN221\KoiStore\KoiStore\RazorPages\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\minha\OneDrive\Desktop\Storage\A Temp\KoiStore\KoiStore\RazorPages
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\FPT\CN7\PRN221\KoiStore\KoiStore\RazorPages
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Create.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Delete.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Details.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Edit.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Index.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/AdminPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/Error.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/KoiPage/Details.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/KoiPage/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pUGFnZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/KoiPage/Index.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/KoiPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pUGFnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/Login.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/Permission.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Permission.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVybWlzc2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/UploadFile.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UploadFile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBsb2FkRmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/UserPage/AboutUs.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcQWJvdXRVcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/UserPage/CreateRating.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcQ3JlYXRlUmF0aW5nLmNzaHRtbA==
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcQ2hlY2tPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/UserPage/DetailsOrderDetail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcRGV0YWlsc09yZGVyRGV0YWlsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/UserPage/Home.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/UserPage/OrderHistory.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/OrderHistory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcT3JkZXJIaXN0b3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/UserPage/UserProfile.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/UserProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcVXNlclByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/UserPage/ViewRating.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcVmlld1JhdGluZy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/_ViewImports.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/_ViewStart.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/minha/OneDrive/Desktop/Storage/A Temp/KoiStore/KoiStore/RazorPages/Pages/Shared/_Layout.cshtml]
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fawojrboro
