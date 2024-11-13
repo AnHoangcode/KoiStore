@@ -71,6 +71,11 @@ namespace DAOs
 
         public Rating GetRatingById(int id) => _context.Ratings.SingleOrDefault(x => x.Rating_Id == id);
 
+        public Rating GetRatingbyOrderDetail(int order_Detail_Id)
+        {
+            return _context.Ratings.SingleOrDefault(x => x.Order_Detail_Id == order_Detail_Id);
+        }
+
         public bool UpdateRating(Rating o)
         {
             bool isSucess = false;

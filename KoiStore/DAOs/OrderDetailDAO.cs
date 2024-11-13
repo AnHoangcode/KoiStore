@@ -105,5 +105,10 @@ namespace DAOs
             }
             return isSucess;
         }
-	}
+
+        public List<OrderDetail> GetOrderDetailByOrderId(int? id)
+        {
+            return _context.OrderDetails.Include(od => od.Koi).Where(od => od.Order_Id == id).ToList();
+        }
+    }
 }

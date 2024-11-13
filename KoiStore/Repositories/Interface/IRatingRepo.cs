@@ -13,6 +13,7 @@ namespace Repositories.Interface
         bool DeleteRating(int id);
         List<Rating> GetAllRatings();
         Rating GetRatingById(int id);
+        Rating GetRatingbyOrderDetail(int order_Detail_Id);
         bool UpdateRating(Rating o);
     }
 }

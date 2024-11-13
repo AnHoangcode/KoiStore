@@ -1,0 +1,44 @@
+﻿@page
+@using BusinessObjects.Models
+@model RazorPages.Pages.UserPage.ViewRatingrModel
+
+@{
+    ViewData["Title"] = "ViewRating";
+    int orderId = (int)ViewData["OrderId"];
+}
+
+<h1>Rating</h1>
+
+<div>
+    <h4>Rating</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Rating.Rating_Value)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Rating.Rating_Value)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Rating.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Rating.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Rating.Create_At)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Rating.Create_At)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Rating.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Rating.Status)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./DetailsOrderDetail" asp-route-id="@orderId">Back to List</a>
+</div>

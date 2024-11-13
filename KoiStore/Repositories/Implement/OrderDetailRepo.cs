@@ -26,5 +26,10 @@ namespace Repositories.Implement
 
         public bool CreateOrderDetail(OrderDetail o)
         => OrderDetailDAO.Instance.CreateOrderDetail(o);
+
+        public List<OrderDetail> GetOrderDetailByOrderId(int? id)
+        {
+            return OrderDetailDAO.Instance.GetOrderDetailByOrderId(id);
+        }
     }
 }

@@ -18,5 +18,6 @@ namespace Services.Interface
 		bool UpdateOrderDetail(OrderDetail o);
 
 		bool CreateOrderDetail(OrderDetail o);
-	}
+        List<OrderDetail> GetOrderDetailByOrderId(int? id);
+    }
 }
