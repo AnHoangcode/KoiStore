@@ -53,11 +53,12 @@
 
         <!-- Buttons for adding to cart and buying now -->
         <div class="action-buttons">
-            <a href="@Url.Page("/KoiPage/BuyNow", new { id = Model.KoiProfile.Koi_Id })" class="btn btn-success">Buy Now</a>
+            <a href="@Url.Page("/KoiPage/Details", new { id = Model.KoiProfile.Koi_Id, handler = "BuyNow" })" class="btn btn-success">Buy Now</a>
         </div>
+
     </div>
 </div>
-
+ 
 <!-- Styles -->
 <style>
     .product-title {

@@ -42,6 +42,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/KoiPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pUGFnZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/KoiPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS29pUGFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcQ2hlY2tPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Desktop/FPT/CN7/PRN221/KoiStore/KoiStore/RazorPages/Pages/UserPage/Home.cshtml]

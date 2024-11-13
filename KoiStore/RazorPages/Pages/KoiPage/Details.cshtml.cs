@@ -23,7 +23,22 @@ namespace RazorPages.Pages.KoiPage
             _koiTypeService = koiTypeService;
         }
 
+        public async Task<IActionResult> OnGetBuyNowAsync(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            HttpContext.Session.SetInt32("KoiId", (int)id);
+
+            // Chuyển hướng đến trang Checkout
+            return RedirectToPage("/UserPage/CheckOut");
+        }
+
+
         [BindProperty]
+
 
         public KoiProfile KoiProfile { get; set; } = default!;
 
