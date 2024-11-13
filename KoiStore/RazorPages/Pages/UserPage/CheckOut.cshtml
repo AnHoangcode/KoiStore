@@ -6,6 +6,13 @@
 
 <h2 class="text-center mb-4">Checkout</h2>
 
+@if (TempData["OrderStatus"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["OrderStatus"]
+    </div>
+}
+
 <div class="order-summary card mb-4">
     <div class="card-header">
         <h3 class="card-title mb-0">Order Summary</h3>
